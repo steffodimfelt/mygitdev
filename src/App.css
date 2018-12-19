@@ -1,7 +1,17 @@
 #App {
+  width: 800px;
   height: 100%;
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
+#MainContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#InnerContainer {
+  display: flex;
+  flex-direction: row;
+}
+.CapUp{text-transform: uppercase; }
+.CapDown{text-transform: none;}

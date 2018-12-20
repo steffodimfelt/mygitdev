@@ -197,7 +197,7 @@ return [
       'employer':'6',
       'imgCollage':'9',
       'imgCollageSetup':'36,54,55,56',
-      'imgThumb': 'https://raw.githubusercontent.com/AppDaniel/BnB/master/www/img/startpg.jpg',
+      'imgThumb': 'https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/web/2x2-Metallica02.jpg',
       'tools':'1,10,14',
       'tasks':'7,8,10,16,38,39',
       'format':'HTML<BR>Flash',

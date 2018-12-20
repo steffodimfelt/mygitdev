@@ -8,8 +8,8 @@ class CasesDetail extends Component {
     return (
       <div style={this.props.style}>
         <h3 style={{margin: 0, padding: 0, marginBottom: 10}}>{this.props.porto.headline}</h3>
-        <img style={{width: 200, height: 200}} src={require('../img/cases/test.jpg')} />
-
+        <img style={{width: 200, height: 200}} src={this.props.porto.imgThumb} />
+        {/* '../img/cases/test.jpg' */}
 
         <p style={{fontSize: 13, lineHeight: 1.7}} dangerouslySetInnerHTML = {{ __html : this.props.porto.textLong  }} />
       </div>

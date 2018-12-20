@@ -197,12 +197,13 @@ return [
       'employer':'6',
       'imgCollage':'9',
       'imgCollageSetup':'36,54,55,56',
+      'imgThumb': 'https://raw.githubusercontent.com/AppDaniel/BnB/master/www/img/startpg.jpg',
       'tools':'1,10,14',
       'tasks':'7,8,10,16,38,39',
       'format':'HTML<BR>Flash',
       'year':'1999',
       'link':null,
-      'linkName':null
+      'linkName':null 
     },
     {
       'id':'11','show':'1','headline':'Skandia, Produktlansering ','textShort':'Inspirationsbilder till Skandias produktfolder. ','textLong':'<span class=\'CapUp\'>N\u00e4r Skandia gjorde om sin profil<span> <span class="CapDown">hade det f\u00f6reg\u00e5tts av en hel del turbulens. Man ins\u00e5g att man beh\u00f6vde byta bort sin gamla kostym och paraply och f\u00f6ra in n\u00e5got nytt. Inget konstigt med det. Alla stora f\u00f6retag g\u00f6r det med j\u00e4mna mellanrum. <BR><BR>Skandias nya profil var allt annat \u00e4n f\u00f6retagsbl\u00e5. Man tog en gr\u00f6n f\u00e4rg ist\u00e4llet. Man tog fram en ny logotype med namnet \'Skandia\' och adderade ett kolon i silver efter namnet. <BR><BR>V\u00e5rt uppdrag blev att anv\u00e4nda oss av kolona och f\u00e4rgerna p\u00e5 produkter. Det blev som ett m\u00f6nster i b\u00e5de grund- och accentf\u00e4rger. <BR><BR>F\u00f6r att riktigt v\u00e4nda blad, ville man \u00e4ven skapa ett event p\u00e5 sitt huvudkontor. Till detta event skapades en utst\u00e4llning och till denna utst\u00e4llning beh\u00f6vdes det en inspirerande folder med produkter. <BR><BR>F\u00f6r att g\u00f6ra en l\u00e5ng historia kort - jag fotade inspirationsbilderna till foldern och till s\u00e4ljmaterialet. Jag gjorde \u00e4ven f\u00f6rpackningar, ansvarade f\u00f6r webbshop och material till en lanseringsmonter f\u00f6r deras huvudkontor.</span>','textPin':'Inspirationsbilder till Skandias produktfolder. ','caseInputDate':'2015-04-17','showArt':'0','quote':null,'quoteName':'','type':'Inspirationsfoton','colorSpace':'1','employer':'2','imgCollage':'3','imgCollageSetup':'45,44,43','tools':'16,1','tasks':'12,16,17,19','format':'-','year':'2008','link':null,'linkName':null},

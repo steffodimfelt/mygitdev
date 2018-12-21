@@ -12,7 +12,7 @@ class App extends Component {
           <div id="InnerContainer">
             <CasesList style={{flex: 4, top: 0}} />
             <div style={{flex: 6, paddingLeft: 15}}>
-              <CasesDetail style={{ top: 0, width: '400px'}}/>
+              <CasesDetail style={{ top: 0}}/>
             </div>
           </div>
         </div>

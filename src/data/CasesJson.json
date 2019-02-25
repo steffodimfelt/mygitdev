@@ -1,25 +1,24 @@
 [
     {
-        "id": 1,
-        "name": "Leanne Graham",
-        "username": "Bret",
-        "email": "Sincere@april.biz",
-        "address": {
-            "street": "Kulas Light",
-            "suite": "Apt. 556",
-            "city": "Gwenborough",
-            "zipcode": "92998-3874",
-            "geo": {
-                "lat": "-37.3159",
-                "lng": "81.1496"
-            }
-        },
-        "phone": "1-770-736-8031 x56442",
-        "website": "hildegard.org",
-        "company": {
-        "name": "Romaguera-Crona",
-        "catchPhrase": "Multi-layered client-server neural-net",
-        "bs": "harness real-time e-markets"
-        }
+        "id":"1",
+        "show":"1",
+        "name":"Narcissus",
+        "textShort":"Filmen om Narcissus handlar om f\u00f6rnekelse och om sitt eget ansvar f\u00f6r det egna livet. ",
+        "textLong":"<iframe src=\"\/\/www.youtube.com\/embed\/LqUI8iE8BsE\" frameborder=\"0\" allowfullscreen width=\"100%\" height=\"300px\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen><\/iframe><BR><BR>\n<span class=\"CapUp\">Historien om  Narcissus<\/span> \u00e4r gott och v\u00e4l 2500 \u00e5r gammal och tillh\u00f6r den grekiska mytologin.\n<BR><BR>\nHandlingen kretsar kring en man som blev d\u00f6md att f\u00f6r\u00e4lska sig i egen spegelbild, vilket gjorde att han inte kunde slita blicken fr\u00e5n sitt ansikte, vilket i sin tur slutade med att han tynade bort. \n<BR><BR>\nI min uppdaterade version b\u00e4r Narcissus p\u00e5 alla de drag en stark sj\u00e4lv\u00e4lskande person har. Hans sj\u00e4lvcentrering har gjort att han st\u00f6tts bort av hans v\u00e4nner. Som den narcissistiska person han \u00e4r, f\u00f6rnekar han sitt eget ansvar och skyller p\u00e5 alla andra. Han har satt ett ultimatum till sina v\u00e4nner - om de inte dyker upp s\u00e5 kommer han att ta sitt liv. Sj\u00e4lvklart s\u00e5 tror han att de ska dyka upp och r\u00e4dda honom och d\u00e4rmed kommer de att bekr\u00e4fta Narcissus tro att de \u00e4lskar honom mer \u00e4n livet.\n<BR><BR>\nDen enda som dyker upp \u00e4r Broder - spegelbilden - den enda som s\u00e4ger sanningen till Narcissus. \n<BR><BR>\nFilmen tog tv\u00e5 dagar att filma med en RED-kamera. Platsen \u00e4r en solig och lummig \u00e4ng vid Sj\u00f6\u00e4ndan utanf\u00f6r Norrt\u00e4lje.\n<BR><BR>\nHuvudrollsinnehavaren <a href=\"www.pontusolgrim.se\">Pontus Olgrim<\/a> fick pris f\u00f6r b\u00e4sta manliga huvudroll i Indie Fest 2012. \n",
+        "textPin":"Filmen om Narcissus handlar om f\u00f6rnekelse och om sitt eget ansvar f\u00f6r det egna livet. ",
+        "caseInputDate":"2015-02-23",
+        "showArt":"0",
+        "quote":"Steffo \u00e4r artistiskt beg\u00e5vad med stor fantasi parat med en stark f\u00f6rm\u00e5ga till avslut. Han \u00e4r stark i hela produktionskedjan - id\u00e9, manusskrivande, produktion, foto\/regi och postproduktion.",
+        "quoteName":"Pontus Olgrim<BR>Producent och sk\u00e5despelare","type":"Kortfilm, 11min",
+        "colorSpace":"1",
+        "employer":"1",
+        "imgCollage":"9",
+        "imgCollageSetup":"1,13,5,3",
+        "tools":"15,12",
+        "tasks":"1,2,6,24,37",
+        "format":"RED",
+        "year":"2010",
+        "link":"http:\/\/241production.com\/",
+        "linkName":"241production"
     }
 ]

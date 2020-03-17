@@ -11,7 +11,7 @@ class CasesList extends Component {
       .map((caseItem) => {
         return (
           <p
-            style={{lineHeight: 1, margin: 0, padding: 0, marginBottom: 10, fontSize: 11, cursor: 'pointer'}}
+            style={{lineHeight: 1, margin: 0, padding: 0, marginBottom: 10, fontSize: 12, cursor: 'pointer'}}
             key={caseItem.id}
             onClick={() => this.props.selectCase(caseItem)}
           >

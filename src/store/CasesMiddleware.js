@@ -27,22 +27,36 @@ const pickIDFromNumberPushTitleToArray = (objectArray, numberArray) => {
       objectValue.id === numberValue && (newArray.push(objectValue.title));
     });
   });
+  newArray.sort((a, b) => a.localeCompare(b));
   return newArray;
+};
+
+const convertNumberToArray = (arrayIn, dataArrayIn) => {
+  const convertNumberArray = convertStringToNumberArray(arrayIn);
+  const newArrayOut = pickIDFromNumberPushTitleToArray(dataArrayIn, convertNumberArray);
+  return newArrayOut;
 };
 
 
 const casesMiddleware = store => next => action => {
-  console.log('store', store.getState());
-  const {casesData, colorsData} = store.getState();
+//   console.log('store', store.getState());
+  const {colorsData, employerData, toolsData, tasksData} = store.getState();
   if (action.type === 'SELECT_CASE') {
     let case_LOCAL = action.payload; 
 
     // Set Colorspace of project
-    const colorSpace = convertStringToNumberArray(case_LOCAL.colorSpace);
-    const setColor_LOCAL = pickIDFromNumberPushTitleToArray(colorsData, colorSpace);
-    case_LOCAL.colorSpace = setColor_LOCAL;
+    case_LOCAL.colorSpace = convertNumberToArray(case_LOCAL.colorSpace, colorsData);
 
-    
+    // Set Employer of project
+    case_LOCAL.employer = convertNumberToArray(case_LOCAL.employer, employerData);
+
+    // Set Tools of project
+    case_LOCAL.tools = convertNumberToArray(case_LOCAL.tools, toolsData);
+
+    // Set Tasks of project
+    case_LOCAL.tasks = convertNumberToArray(case_LOCAL.tasks, tasksData);
+
+    // Dispatch new project setup
     store.dispatch(setCaseDetails(case_LOCAL));
   }
   next(action);

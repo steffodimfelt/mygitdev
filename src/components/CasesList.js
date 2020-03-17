@@ -6,7 +6,7 @@ import {selectCase} from '../actions';
 
 class CasesList extends Component {
   createCasesList(){     
-    return this.props.portoCases
+    return this.props.casesData
       .sort((a, b) => a.headline.localeCompare(b.headline))
       .map((caseItem) => {
         return (
@@ -32,7 +32,7 @@ class CasesList extends Component {
 
 function mapStateToProps(state) {
   return{
-    portoCases: state.portoCases,
+    casesData: state.casesData,
   };
 }
 function matchDispatchToProps(dispatch) {
@@ -40,7 +40,7 @@ function matchDispatchToProps(dispatch) {
 }
 
 CasesList.propTypes = {
-  portoCases: PropTypes.array.isRequired,
+  casesData: PropTypes.array.isRequired,
   selectCase: PropTypes.func.isRequired,
   style: PropTypes.object,
 };

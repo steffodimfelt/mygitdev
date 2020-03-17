@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import ReducerCases from './CasesData';
+import casesData from './CasesData';
+import colorsData from './ColorsData';
 // import ReducerActiveCase from './ReducerActiveCase';
 const allReducers = combineReducers({
-  portoCases: ReducerCases,
+  casesData,
+  colorsData
   // activePortoCase: ReducerActiveCase
 });
 export default allReducers;

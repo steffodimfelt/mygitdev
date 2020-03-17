@@ -6,32 +6,35 @@ import Styles from '../styles/Stylesheet';
 class CasesDetail extends Component {
   
   render() {
-
-    if (this.props.porto == null){return null;}
-    const innerContainer = { backgroundImage: 'url(' + this.props.porto.imgThumb + ')' };
+    const {setCase} = this.props;
+    console.log("setCase", setCase)
+    if (setCase == null){return null;}
+  
+    const innerContainer = { backgroundImage: 'url(' + setCase.imgThumb + ')' };
 
     return (
       <div style={this.props.style}>
-        <h3 className="HeaderM">{this.props.porto.headline}</h3>
+        <h3 className="HeaderM">{setCase.headline}</h3>
         <div style={{...Styles.ImgOuterContainer}} >
           <div style ={{...Styles.ImgInnerContainer, ...innerContainer}}></div>
         </div>
-        <p style={{fontSize: 13, lineHeight: 1.7}} dangerouslySetInnerHTML = {{ __html : this.props.porto.textLong  }} />
+        <p style={{fontSize: 13, lineHeight: 1.7}} dangerouslySetInnerHTML = {{ __html : this.props.setCase.textLong  }} />
       </div>
     );
   }
 }
 function mapStateToProps(state) {
+  console.log("state i Cases", state.setCaseDetails)
   return {
-    porto: state.activePortoCase,
+    setCase: state.setCaseDetails,
   };
 }
 CasesDetail.propTypes = {
-  porto: PropTypes.object,
+  setCase: PropTypes.object,
   style: PropTypes.object,
 };
 CasesDetail.defaultProps = {
-  porto: null
+  setCase: null
 };
 
 export default connect(mapStateToProps)(CasesDetail);

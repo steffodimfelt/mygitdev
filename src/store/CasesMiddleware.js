@@ -1,3 +1,4 @@
+import {setCaseDetails} from '../actions/index';
 // Help functions
 // const convertStringToStringArray = string => {
 //   return string.split(',');
@@ -34,11 +35,15 @@ const casesMiddleware = store => next => action => {
   console.log('store', store.getState());
   const {casesData, colorsData} = store.getState();
   if (action.type === 'SELECT_CASE') {
-    const case_LOCAL = action.payload; 
-    console.log('SELECT_CASE', case_LOCAL);
+    let case_LOCAL = action.payload; 
+
+    // Set Colorspace of project
     const colorSpace = convertStringToNumberArray(case_LOCAL.colorSpace);
     const setColor_LOCAL = pickIDFromNumberPushTitleToArray(colorsData, colorSpace);
-    console.log('setColor', setColor_LOCAL)
+    case_LOCAL.colorSpace = setColor_LOCAL;
+
+    
+    store.dispatch(setCaseDetails(case_LOCAL));
   }
   next(action);
 };

@@ -1,7 +1,5 @@
-//Hela exoport cons = Action Creator
-export const selectCase = (caseItem) => {
-  //Det som returneras är en Action
 
+export const selectCase = (caseItem) => {
   return {
     type: 'SELECT_CASE',
     payload: caseItem

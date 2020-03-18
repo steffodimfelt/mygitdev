@@ -29,7 +29,6 @@ class CasesDetail extends Component {
   }
 }
 function mapStateToProps(state) {
-  console.log("state", state)
   return {
     setCase: state.setCaseDetails,
   };

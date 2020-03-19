@@ -1,14 +1,85 @@
+* {box-sizing: border-box; -webkit-box-sizing: border-box;}
+html {display: flex; width: 100%}
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Rows */
+.row {
+  flex: 1;
+  display: flex; 
+  flex-direction: row;
 }
+
+/* Columns */
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flex sizes */
+.f-s0 {flex: 0}
+.f-s1 {flex: 1}
+.f-s2 {flex: 2}
+.f-s3 {flex: 3}
+.f-s4 {flex: 4}
+.f-s6 {flex: 6}
+.f-s8 {flex: 8}
+.f-s12 {flex: 12}
+
+@media(min-width: 600px) {
+  .f-m1 {flex: 1}
+  .f-m2 {flex: 2}
+  .f-m3 {flex: 3}
+  .f-m4 {flex: 4}
+  .f-m6 {flex: 6}
+  .f-m8 {flex: 8}
+  .f-m12 {flex: 12}
+}
+
+@media(min-width: 992px) {
+  .f-l1 {flex: 1}
+  .f-l2 {flex: 2}
+  .f-l3 {flex: 3}
+  .f-l4 {flex: 4}
+  .f-l6 {flex: 6}
+  .f-l8 {flex: 8}
+  .f-l12 {flex: 12}
+}
+
+@media(min-width: 1200px) {
+  .f-xl1 {flex: 1}
+  .f-xl2 {flex: 2}
+  .f-xl3 {flex: 3}
+  .f-xl4 {flex: 4}
+  .f-xl6 {flex: 6}
+  .f-xl8 {flex: 8}
+  .f-xl12 {flex: 12}
+}
+
+
+/* TA bort */
+#App {
+  width: 800px;
+  height: 100%;
+  
+  flex-direction: column;
+}
+#MainContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#InnerContainer {
+  display: flex;
+  flex-direction: row;
+}
+.CapUp{text-transform: uppercase; }
+.CapDown{text-transform: none;}
+
+.HeaderM{margin: 0; padding: 0; text-transform: uppercase; color: #252525}

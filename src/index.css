@@ -101,9 +101,13 @@ body {
 
 /* Colors */
 .pink-bg{background-color: #EA3F95;}
+.pink-col{color: #EA3F95;}
 .purple-bg{background-color: #732B8F;}
+.purple-col{color: #732B8F;}
 .darkgrey-bg{background-color: #707070;}
+.darkgrey-col{color: #707070;}
 .lightgrey-bg{background-color: #F5F3EE;}
+.lightgrey-col{color: #F5F3EE;}
 
 /* Overflow */
 .overflow-auto{overflow: auto;}

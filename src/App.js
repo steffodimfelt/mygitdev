@@ -33,11 +33,11 @@ class App extends Component {
       </div> */}
 
       <div id='menu' 
-      style={{width: '5rem', height: '5rem', backgroundColor: 'yellow', borderRadius: '50%', position: 'fixed', top: '24px', left: '24px', textAlign: 'center'}}
-      className='pointer'
+      style={{width: '4rem', height: '4rem', borderRadius: '50%', position: 'fixed', textAlign: 'center'}}
+      className='m-s24 pointer purple-bg'
       onClick={toggleMenu}
       >
-        <h2 style={{verticalAlign: 'middle', lineHeight: '35px', fontSize:'24px'}}>+</h2>
+        <h2 style={{color: 'white', verticalAlign: 'middle', lineHeight: '1.5rem', fontSize:'1.5rem'}}>+</h2>
       </div>
       </div>
       // <div className='row'>

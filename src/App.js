@@ -1,20 +1,30 @@
+
 import React, { Component } from 'react';
 import './index.css';
 import CasesList from './components/CasesList';
 import CasesDetail from './components/CasesDetail';
+import CaseMenu from './components/CaseMenu';
 
 class App extends Component {
+  state = {
+    openMenu: false
+  }
+  
   render() {
+    const {openMenu} = this.state;
+    const toggleMenu = () => {this.setState({openMenu: !openMenu});};
+
     return (
       <div className='col'>
         <div className='row'>
-          <div id='hero' className='f-s12' style={{height: '20rem', backgroundColor:'blue'}}></div>
+          <div id='hero' className='f-s12 h-20-rem purple-bg'></div>
         </div>
         <div className='row'>
           <div className='f-s0 f-l2'></div>
-          <div id='title' className='f-s8' style={{height: '20rem', backgroundColor:'red'}}>Steffos portfolio</div>
+          <div id='title' className='f-s8' style={{height: '200rem', backgroundColor:'red'}}>Steffos portfolio</div>
           <div className='f-s0 f-l2'></div>
         </div>
+        {openMenu ? <CaseMenu /> : null }
        {/* <div id="InnerContainer" className='row'>
       <CasesList style={{flex: 4, top: 0}} />
       <div style={{flex: 6, paddingLeft: 15}}>
@@ -23,8 +33,9 @@ class App extends Component {
       </div> */}
 
       <div id='menu' 
-      style={{width: '5rem', height: '5rem', backgroundColor: 'yellow', borderRadius: '50%', position: 'absolute', top: '24px', left: '24px', textAlign: 'center'}}
-      onClick={() => console.log("CLICK")}
+      style={{width: '5rem', height: '5rem', backgroundColor: 'yellow', borderRadius: '50%', position: 'fixed', top: '24px', left: '24px', textAlign: 'center'}}
+      className='pointer'
+      onClick={toggleMenu}
       >
         <h2 style={{verticalAlign: 'middle', lineHeight: '35px', fontSize:'24px'}}>+</h2>
       </div>

@@ -23,7 +23,7 @@ class CasesList extends Component {
     
   render(){    
     return(
-      <div style={this.props.style}>
+      <div className='p-v-s24'>
         {this.createCasesList()}
       </div>
     );

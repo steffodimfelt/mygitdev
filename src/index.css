@@ -10,14 +10,14 @@ body {
 
 /* Rows */
 .row {
-  flex: 1;
+  width:100%;
   display: flex; 
   flex-direction: row;
 }
 
 /* Columns */
 .col {
-  flex: 1;
+  width:100%;
   display: flex;
   flex-direction: column;
 }
@@ -29,7 +29,9 @@ body {
 .f-s3 {flex: 3}
 .f-s4 {flex: 4}
 .f-s6 {flex: 6}
+.f-s7 {flex: 7}
 .f-s8 {flex: 8}
+.f-s10 {flex: 10}
 .f-s12 {flex: 12}
 
 @media(min-width: 600px) {
@@ -72,6 +74,7 @@ body {
 .p-s32 {padding: 2rem}
 .p-h-s16 {padding-left: 1rem; padding-right: 1rem;}
 .p-v-s16 {padding-top: 1rem; padding-bottom: 1rem;}
+.p-v-s24 {padding-top: 1.5rem; padding-bottom: 1.5rem;}
 
 /* Margin */
 .m-s4 {margin: 0.25rem}
@@ -84,8 +87,27 @@ body {
 .m-h-s16 {margin-left: 1rem; margin-right: 1rem;}
 .m-v-s16 {margin-top: 1rem; margin-bottom: 1rem;}
 
+/* Absolute Positions */
+.fixed-top {position: fixed; top: 0; left: 0}
+
 /* Cursor */
 .pointer {cursor: pointer;}
+
+/* Height */
+.h-20-rem{height: 20rem;}
+
+/* Width */
+.w-100-per{width: 100%;}
+
+/* Colors */
+.pink-bg{background-color: #EA3F95;}
+.purple-bg{background-color: #732B8F;}
+.darkgrey-bg{background-color: #707070;}
+.lightgrey-bg{background-color: #F5F3EE;}
+
+/* Overflow */
+.overflow-auto{overflow: auto;}
+
 
 /* TA bort */
 #App {

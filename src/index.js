@@ -13,7 +13,7 @@ const middleware = applyMiddleware(casesMiddleware);
 const store = createStore(allReducers, middleware);
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <App/>
   </Provider>
   , document.getElementById('root'));
 

@@ -14,7 +14,7 @@ class CasesDetail extends Component {
     const innerContainer = { backgroundImage: 'url(' + imgThumb + ')' };
 
     return (
-      <div style={this.props.style}>
+      <div className='lightgrey-bg full-screen pos-absolute' >
         <h3 className="HeaderM">{headline}</h3>
         <div style={{...Styles.ImgOuterContainer}} >
           <div style ={{...Styles.ImgInnerContainer, ...innerContainer}}></div>

@@ -51,6 +51,9 @@ class App extends Component {
           <div className='f-s1 f-m2' />
         </div>
 
+        
+        <CasesDetail/>
+
         {openMenu ? <CaseMenu /> : null }
 
         <div id='menu' 
@@ -61,11 +64,6 @@ class App extends Component {
         
           <h2 style={{color: 'white', verticalAlign: 'middle', lineHeight: '1.5rem', fontSize:'1.5rem'}}>+</h2>
         </div>
-       
-
-     
-      
-      
       
       </div>
       // <div className='row'>

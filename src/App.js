@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 import './index.css';
-import CasesList from './components/CasesList';
 import CasesDetail from './components/CasesDetail';
 import CaseMenu from './components/CaseMenu';
 
@@ -40,8 +39,8 @@ class App extends Component {
             {/* Inner part */}
             <div className='f-s10 row pink-border border-s6 border-solid p-s6 '>
               <div className='f-s1 pink-bg' />
-              <div className='f-s2 flex text-align-center pink-bg' style={{verticalAlign: 'middle'}}>
-                <h1 className='hero-font lightgrey-col' style={{margin: 'auto', textAlign: 'center'}}>Steffos Portfolio</h1>
+              <div className='f-s2 flex text-align-center pink-bg vertical-align'>
+                <h1 className='hero-font lightgrey-col'>Steffos Portfolio</h1>
               </div>
               <div className='f-s1 pink-bg' />
             </div>
@@ -53,30 +52,6 @@ class App extends Component {
         </div>
 
         {openMenu ? <CaseMenu /> : null }
-
-        {/* <div id='hero-title'  className='row hero-title' >
-          <div className='f-s1 f-m2' />
-          <div className='col f-s10 f-m8 full-screen' >
-          
-            <div className='f-s1'  />
-            <div className='f-s2'  >
-              <div 
-                className='flex pink-border border-s6 border-solid p-s6'
-                style={{height: 200}}
-              >
-
-                <div 
-                className='full-hundred pink-bg text-align-center' >
-                  <h1  className='font-size-xl font-lineheight-xl lightgrey-col'>Steffos Portfolio</h1>
-                </div>
-              </div>
-            </div>
-            <div className='f-s1' />
-
-          </div>
-          <div className='f-s1 f-m2' />
-        </div> */}
-
 
         <div id='menu' 
           style={{width: '4rem', height: '4rem', borderRadius: '50%', position: 'fixed', textAlign: 'center'}}

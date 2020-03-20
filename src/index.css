@@ -157,6 +157,7 @@ body {
 .font-size-xl{font-size: 4rem;}
 .font-lineheight-xl{font-size: 9rem;}
 .text-align-center{text-align: center}
+.vertical-align{vertical-align: middle}
 
 /* Borders */
 .border-solid{border-style: solid}
@@ -169,7 +170,11 @@ body {
 .hero-title{
   position: absolute;
 }
-.hero-font{font-size: 4rem; line-height: 3.5rem}
+.hero-font{
+  font-size: 4rem; 
+  line-height: 3.5rem; 
+  margin: auto; 
+  text-align: center}
 @media (min-width: 600px) {
   .hero-font{font-size: 8rem; line-height: 7rem}
 }

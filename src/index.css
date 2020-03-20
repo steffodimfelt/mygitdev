@@ -163,13 +163,15 @@ body {
 .border-s6{border-width: 0.375rem;}
 
 
-@media (min-width: 1200px) {
-  .center-font-hero{width: 50%;}
-}
+
 
 /* Hero Title */
 .hero-title{
   position: absolute;
+}
+.hero-font{font-size: 4rem;}
+@media (min-width: 600px) {
+  .hero-font{font-size: 8rem;}
 }
 
 

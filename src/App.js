@@ -18,18 +18,36 @@ class App extends Component {
       <div className='col'>
         <div className='row '>
           <div id='hero' className='full-screen overflow-hidden' >
-            <img className="center-center img-full-screen img-center-adjust" src='https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/3d/BoC-01.jpg' />
+            <img className="center-center img-full-screen img-center-adjust" src='https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/print/2x1FriskisV15_4.jpg' />
           </div>
           
         </div>
         
-        {openMenu ? <CaseMenu /> : null }
+       
         {/* <div id="InnerContainer" className='row'>
       <CasesList style={{flex: 4, top: 0}} />
       <div style={{flex: 6, paddingLeft: 15}}>
       <CasesDetail style={{ top: 0}}/>
       </div>
       </div> */}
+
+
+        <div className='col full-screen hero-title'>
+          <div className='f-s1 f-m2' />
+          <div className='f-s1 f-m2' >
+            <div className='row pink-border border-s6 border-solid p-s6'>
+            <div className='f-s1' />
+            <div className='f-s2 text-align-center' >
+            <h1  className='hero-font pink-col'>Steffos Portfolio</h1>
+            </div>
+            <div className='f-s1' />
+            
+            </div>
+          </div>
+          <div className='f-s1 f-m2' />
+        </div>
+
+           {openMenu ? <CaseMenu /> : null }
 
         {/* <div id='hero-title'  className='row hero-title' >
           <div className='f-s1 f-m2' />
@@ -57,7 +75,7 @@ class App extends Component {
 
         <div id='menu' 
           style={{width: '4rem', height: '4rem', borderRadius: '50%', position: 'fixed', textAlign: 'center'}}
-          className='m-s24 pointer purple-bg shadow-1'
+          className='m-s24 pointer pink-bg shadow-1'
           onClick={toggleMenu}
         >
         

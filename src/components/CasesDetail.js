@@ -14,17 +14,41 @@ class CasesDetail extends Component {
     const innerContainer = { backgroundImage: 'url(' + imgThumb + ')' };
 
     return (
-      <div className='row fixed-top full-hundred lightgrey-bg overflow-auto' >
-        <div >
-          <h3 className="HeaderM">{headline}</h3>
-          <div style={{...Styles.ImgOuterContainer}} >
-            <div style ={{...Styles.ImgInnerContainer, ...innerContainer}}></div>
+      <div className='fixed-top full-hundred lightgrey-bg overflow-auto' >
+        <div style={{...innerContainer, width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }}>
+        </div>
+        <div className='col'>
+          <div className='row'>
+            <div className='f-l2' />
+            <div className='f-l8'>
+              <h3>{headline}</h3>
+            </div>
+            <div className='f-l2' />
           </div>
-          <p style={{fontSize: 13, lineHeight: 1.7}} dangerouslySetInnerHTML = {{ __html : textLong  }} />
-          <CaseStats title='Färgrymd' array={colorSpace}/>
-          <CaseStats title='Verktyg' array={tools}/>
-          <CaseStats title='Uppgifter' array={tasks}/>
-          <CaseStats title='Uppdragsgivare' array={employer}/>
+          <div className='row'>
+            <div className='f-l2' />
+            <div className='f-l8'>
+              {/* TODO: Gör en mappad text istället */}
+              <p dangerouslySetInnerHTML = {{ __html : textLong  }} />
+            </div>
+            <div className='f-l2' />
+          </div>
+        </div>
+        <div className='row'>
+          <div className='f-l2' />
+          <div className='f-l4'>bild 1</div>
+          <div className='f-l4'>bild 2</div>
+          <div className='f-l2' />
+        </div>
+        <div className='row'>
+          <div className='f-l2' />
+          <div className='row f-l8'>
+            <div className='f-l1'><CaseStats title='Färgrymd' array={colorSpace}/></div>
+            <div className='f-l1'><CaseStats title='Verktyg' array={tools}/></div>
+            <div className='f-l1'><CaseStats title='Uppgifter' array={tasks}/></div>
+            <div className='f-l1'><CaseStats title='Uppdragsgivare' array={employer}/></div>
+          </div>
+          <div className='f-l2' />
         </div>
       </div>
     );

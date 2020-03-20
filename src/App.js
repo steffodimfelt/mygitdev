@@ -14,10 +14,9 @@ class App extends Component {
       <div className='col'>
         <div className='row '>
           <div id='hero' className='full-screen overflow-hidden' >
-            <img className="center-center img-full-screen img-center-adjust" src='https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/print/2x1FriskisV15_4.jpg' />
+            <div style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/print/2x1FriskisV15_4.jpg)', width: '100%', height: '100%',  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
           </div>
-        </div>
-        
+        </div>  
         <div className='col full-screen hero-title'>
           <div className='f-s1 f-m2' />
           <div className='row f-s1 f-m2' >

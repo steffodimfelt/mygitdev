@@ -15,8 +15,7 @@ class CasesDetail extends Component {
 
     return (
       <div className='fixed-top full-hundred lightgrey-bg overflow-auto' >
-        <div style={{...innerContainer, width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }}>
-        </div>
+        <div style={{...innerContainer, width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
         <div className='col'>
           <div className='row'>
             <div className='f-l2' />

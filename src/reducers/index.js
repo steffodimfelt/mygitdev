@@ -5,6 +5,7 @@ import employerData from './EmployerData';
 import toolsData from './ToolsData';
 import tasksData from './TasksData';
 import setCaseDetails from './SetCaseDetails';
+import caseReducers from './CaseReducers';
 
 const allReducers = combineReducers({
   casesData,
@@ -12,6 +13,7 @@ const allReducers = combineReducers({
   employerData,
   toolsData,
   tasksData,
-  setCaseDetails
+  setCaseDetails,
+  caseReducers
 });
 export default allReducers;

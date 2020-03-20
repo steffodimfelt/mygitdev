@@ -14,16 +14,18 @@ class CasesDetail extends Component {
     const innerContainer = { backgroundImage: 'url(' + imgThumb + ')' };
 
     return (
-      <div className='lightgrey-bg full-screen pos-absolute' >
-        <h3 className="HeaderM">{headline}</h3>
-        <div style={{...Styles.ImgOuterContainer}} >
-          <div style ={{...Styles.ImgInnerContainer, ...innerContainer}}></div>
+      <div className='row fixed-top full-hundred lightgrey-bg overflow-auto' >
+        <div >
+          <h3 className="HeaderM">{headline}</h3>
+          <div style={{...Styles.ImgOuterContainer}} >
+            <div style ={{...Styles.ImgInnerContainer, ...innerContainer}}></div>
+          </div>
+          <p style={{fontSize: 13, lineHeight: 1.7}} dangerouslySetInnerHTML = {{ __html : textLong  }} />
+          <CaseStats title='Färgrymd' array={colorSpace}/>
+          <CaseStats title='Verktyg' array={tools}/>
+          <CaseStats title='Uppgifter' array={tasks}/>
+          <CaseStats title='Uppdragsgivare' array={employer}/>
         </div>
-        <p style={{fontSize: 13, lineHeight: 1.7}} dangerouslySetInnerHTML = {{ __html : textLong  }} />
-        <CaseStats title='Färgrymd' array={colorSpace}/>
-        <CaseStats title='Verktyg' array={tools}/>
-        <CaseStats title='Uppgifter' array={tasks}/>
-        <CaseStats title='Uppdragsgivare' array={employer}/>
       </div>
     );
   }

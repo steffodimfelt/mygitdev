@@ -1,36 +1,23 @@
-
 import React, { Component } from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
 import './index.css';
 import CasesDetail from './components/CasesDetail';
 import CaseMenu from './components/CaseMenu';
+import {toggleMenu} from './actions';
 
 class App extends Component {
-  state = {
-    openMenu: false
-  }
-  
   render() {
-    const {openMenu} = this.state;
-    const toggleMenu = () => {this.setState({openMenu: !openMenu});};
-
+    const toggleMenu = () => {this.props.toggleMenu(!this.props.toggle);};
     return (
       <div className='col'>
         <div className='row '>
           <div id='hero' className='full-screen overflow-hidden' >
             <img className="center-center img-full-screen img-center-adjust" src='https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/print/2x1FriskisV15_4.jpg' />
           </div>
-          
         </div>
         
-       
-        {/* <div id="InnerContainer" className='row'>
-      <CasesList style={{flex: 4, top: 0}} />
-      <div style={{flex: 6, paddingLeft: 15}}>
-      <CasesDetail style={{ top: 0}}/>
-      </div>
-      </div> */}
-
-
         <div className='col full-screen hero-title'>
           <div className='f-s1 f-m2' />
           <div className='row f-s1 f-m2' >
@@ -51,10 +38,9 @@ class App extends Component {
           <div className='f-s1 f-m2' />
         </div>
 
-        
         <CasesDetail/>
 
-        {openMenu ? <CaseMenu /> : null }
+        {this.props.toggle ? <CaseMenu /> : null }
 
         <div id='menu' 
           style={{width: '4rem', height: '4rem', borderRadius: '50%', position: 'fixed', textAlign: 'center'}}
@@ -66,23 +52,21 @@ class App extends Component {
         </div>
       
       </div>
-      // <div className='row'>
-      //   <div style={{backgroundColor: 'red', height: '30px'}} className='f-s1 f-xl12'>RAD 1</div>
-      //   <div style={{backgroundColor: 'yellow', height: '30px'}} className='f-s1'>RAD 2</div>
-      
-    // </div>
-    // <div id='MainContainer' className='col'>
-    //   <h1>Steffos Portfolio</h1>
-
-    //   <div id="InnerContainer">
-    //     <CasesList style={{flex: 4, top: 0}} />
-    //     <div style={{flex: 6, paddingLeft: 15}}>
-    //       <CasesDetail style={{ top: 0}}/>
-    //     </div>
-    //   </div>
-    // </div>
     );
   }
 }
+App.propTypes = {
+  toggleMenu: PropTypes.func.isRequired,
+  toggle: PropTypes.bool.isRequired,
+};
 
-export default App;
+function mapStateToProps(state) {
+  return{
+    toggle: state.caseReducers.toggleMenu,
+  };
+}
+function matchDispatchToProps(dispatch) {
+  return bindActionCreators({toggleMenu}, dispatch);
+}
+
+export default connect(mapStateToProps, matchDispatchToProps)(App);

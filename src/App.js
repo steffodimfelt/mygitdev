@@ -34,20 +34,25 @@ class App extends Component {
 
         <div className='col full-screen hero-title'>
           <div className='f-s1 f-m2' />
-          <div className='f-s1 f-m2' >
-            <div className='row pink-border border-s6 border-solid p-s6'>
+          <div className='row f-s1 f-m2' >
+            {/* Outer part */}
             <div className='f-s1' />
-            <div className='f-s2 text-align-center' >
-            <h1  className='hero-font pink-col'>Steffos Portfolio</h1>
+            {/* Inner part */}
+            <div className='f-s10 row pink-border border-s6 border-solid p-s6 '>
+              <div className='f-s1 pink-bg' />
+              <div className='f-s2 flex text-align-center pink-bg' style={{verticalAlign: 'middle'}}>
+                <h1 className='hero-font lightgrey-col' style={{margin: 'auto', textAlign: 'center'}}>Steffos Portfolio</h1>
+              </div>
+              <div className='f-s1 pink-bg' />
             </div>
+            {/* END: Inner part */}
             <div className='f-s1' />
-            
-            </div>
+            {/* END: Outer part */}
           </div>
           <div className='f-s1 f-m2' />
         </div>
 
-           {openMenu ? <CaseMenu /> : null }
+        {openMenu ? <CaseMenu /> : null }
 
         {/* <div id='hero-title'  className='row hero-title' >
           <div className='f-s1 f-m2' />

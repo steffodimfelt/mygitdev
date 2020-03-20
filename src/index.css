@@ -169,9 +169,9 @@ body {
 .hero-title{
   position: absolute;
 }
-.hero-font{font-size: 4rem;}
+.hero-font{font-size: 4rem; line-height: 3.5rem}
 @media (min-width: 600px) {
-  .hero-font{font-size: 8rem;}
+  .hero-font{font-size: 8rem; line-height: 7rem}
 }
 
 

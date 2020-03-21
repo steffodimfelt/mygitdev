@@ -16,32 +16,31 @@ class CasesDetail extends Component {
         <div className='col'>
           <div className='row'>
             <div className='f-l2' />
-            <div className='f-l8 text-align-center'>
-              <h1 style={{fontSize: '6rem', lineHeight: '5.8rem'}} className='pink-col'>{headline}</h1>
+            <div id='case-title' className='f-l8 text-align-center'>
+              <h1 style={{}} className='pink-col'>{headline}</h1>
             </div>
             <div className='f-l2' />
           </div>
           <div className='row'>
             <div className='f-l3' />
-            <div className='f-l7'>
+            <div className='f-l7' id='case-text'>
               {/* TODO: Gör en mappad text istället */}
-              <p style={{fontSize: '1.5rem', lineHeight: '2.2rem'}} className='darkgrey-col' dangerouslySetInnerHTML = {{ __html : textLong  }} />
+              <p  style={{fontSize: '1.5rem', lineHeight: '2.2rem'}} className='darkgrey-col' dangerouslySetInnerHTML = {{ __html : textLong  }} />
             </div>
             <div className='f-l3' />
           </div>
         </div>
         <div className='row'>
           <div className='f-l2' />
-          <div className='f-l8 row' > 
-            <div className='f-l12' style={{ backgroundImage: 'url(' + imgThumb + ')', width: '100%', height: 400,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
-            <div className='f-l1' />
-            <div className='f-l12' style={{backgroundImage: 'url(' + imgThumb + ')', width: '100%', height: 400,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />          
+          <div id='case-images' className='f-l8' > 
+            <div className='cover-image' style={{ backgroundImage: 'url(' + imgThumb + ')' }} />
+            <div className='cover-image' style={{backgroundImage: 'url(' + imgThumb + ')' }} />          
           </div>
           <div className='f-l2' />
         </div>
         <div className='row'>
           <div className='f-l2' />
-          <div className='row f-l8  border-s1-vertical' style={{marginTop: 48, paddingTop: 48, paddingBottom: 48 }}>
+          <div className='row f-l8 border-s1-vertical' style={{marginTop: 48, paddingTop: 48, paddingBottom: 48, flexWrap: 'wrap' }}>
             <div className='f-s1'><CaseStats title='Färgrymd' array={colorSpace}/></div>
             <div className='f-s1'><CaseStats title='Verktyg' array={tools}/></div>
             <div className='f-s1'><CaseStats title='Uppgifter' array={tasks}/></div>

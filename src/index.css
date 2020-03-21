@@ -236,6 +236,29 @@ h2, h3, h4, h5, h6{
   line-height: 12vw; 
   margin: auto; 
   text-align: center}
+
+/* iPhone 5, 5S, 5C, 5SE, 6, 6S, 7 and 8*/
+ @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .hero-font{
+      font-size: 5vw; 
+      line-height: 5vw; 
+    }
+}
+/* iPhone 6+, 7+, 8+ and X */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) {
+  .hero-font{
+    font-size: 5vw; 
+    line-height: 5vw; 
+  }
+}
 @media (min-width: 992px) {
   .hero-font{font-size: 8rem; line-height: 7rem}
 }

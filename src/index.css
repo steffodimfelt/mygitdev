@@ -46,7 +46,7 @@ body {
 .f-s11 {flex: 11}
 .f-s12 {flex: 12}
 
-@media(min-width: 600px) {
+@media  only screen and (min-width: 600px) {
   .f-m1 {flex: 1}
   .f-m2 {flex: 2}
   .f-m3 {flex: 3}
@@ -61,7 +61,7 @@ body {
   .f-m12 {flex: 12}
 }
 
-@media(min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .f-l1 {flex: 1}
   .f-l2 {flex: 2}
   .f-l3 {flex: 3}
@@ -76,7 +76,7 @@ body {
   .f-l12 {flex: 12}
 }
 
-@media(min-width: 1200px) {
+@media  only screen and (min-width: 1200px) {
   .f-xl1 {flex: 1}
   .f-xl2 {flex: 2}
   .f-xl3 {flex: 3}
@@ -273,6 +273,10 @@ and (orientation: landscape) {
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center center;
+}
+#case-title {
+  margin: auto; 
+  text-align: center
 }
 #case-title > h1 {font-size: 6rem; line-height: 5.8rem}
 

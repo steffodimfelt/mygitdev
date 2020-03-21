@@ -22,31 +22,31 @@ class CasesDetail extends Component {
             <div className='f-l2' />
           </div>
           <div className='row'>
-            <div className='f-l3' />
-            <div className='f-l7' id='case-text'>
+            <div className='f-s0 f-m2' />
+            <div className='f-s1 f-m8' id='case-text'>
               {/* TODO: Gör en mappad text istället */}
               <p  style={{fontSize: '1.5rem', lineHeight: '2.2rem'}} className='darkgrey-col' dangerouslySetInnerHTML = {{ __html : textLong  }} />
             </div>
-            <div className='f-l3' />
+            <div className='f-s0 f-m2' />
           </div>
         </div>
         <div className='row'>
-          <div className='f-l2' />
-          <div id='case-images' className='f-l8' > 
+          <div className='f-s0 f-l2' />
+          <div id='case-images' className='f-s1 f-l8' > 
             <div className='cover-image' style={{ backgroundImage: 'url(' + imgThumb + ')' }} />
             <div className='cover-image' style={{backgroundImage: 'url(' + imgThumb + ')' }} />          
           </div>
-          <div className='f-l2' />
+          <div className='f-s0 f-l2' />
         </div>
         <div id='case-stats-outer-container' className='row'>
-          <div  className='f-l2' />
-          <div id='case-stats-container' className='row f-l8 border-s1-vertical'>
+          <div  className='f-s0 f-l2' />
+          <div id='case-stats-container' className='row f-s1 f-l8 border-s1-vertical'>
             <div className='case-stat '><CaseStats title='Färgrymd' array={colorSpace}/></div>
             <div className='case-stat '><CaseStats title='Verktyg' array={tools}/></div>
             <div className='case-stat '><CaseStats title='Uppgifter' array={tasks}/></div>
             <div className='case-stat '><CaseStats title='Uppdragsgivare' array={employer}/></div>
           </div>
-          <div className='f-l2' />
+          <div className='f-s0 f-l2' />
         </div>
       </div>
     );

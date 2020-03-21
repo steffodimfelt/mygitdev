@@ -244,10 +244,11 @@ h2, h3, h4, h5, h6{
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     .hero-font{
-      font-size: 5vw; 
-      line-height: 5vw; 
+      font-size: 6vw; 
+      line-height: 6vw; 
     }
 }
+
 /* iPhone 6+, 7+, 8+ and X */
 @media only screen 
 and (min-device-width: 414px) 
@@ -255,12 +256,12 @@ and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: landscape) {
   .hero-font{
-    font-size: 5vw; 
-    line-height: 5vw; 
+    font-size: 6vw; 
+    line-height: 6vw; 
   }
 }
 @media (min-width: 992px) {
-  .hero-font{font-size: 8rem; line-height: 7rem}
+  .hero-font{font-size: 8vw; line-height: 7rem}
 }
 
 /* Case Images */

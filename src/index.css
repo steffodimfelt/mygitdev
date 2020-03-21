@@ -271,5 +271,22 @@ h2, h3, h4, h5, h6{
   .cover-image:last-child {margin-top: 0; margin-left: 1rem;}
 }
 
+/* Case Stats */
+#case-stats-container{
+  margin-top: 48px; 
+  padding-top: 48px; 
+  padding-bottom: 48px;
+  flex-wrap: wrap;
+}
+.case-stat{width: 50%}
 
+@media (min-width: 992px){
+  .case-stat{width: 25%}
+}
+@media (max-width: 992px){
+  #case-stats-outer-container{
+    padding-right: 24px; 
+    padding-left: 24px;
+  }
+}
 

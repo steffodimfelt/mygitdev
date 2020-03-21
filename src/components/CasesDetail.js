@@ -17,7 +17,7 @@ class CasesDetail extends Component {
           <div className='row'>
             <div className='f-l2' />
             <div id='case-title' className='f-l8 text-align-center'>
-              <h1 style={{}} className='pink-col'>{headline}</h1>
+              <h1 className='pink-col'>{headline}</h1>
             </div>
             <div className='f-l2' />
           </div>
@@ -38,13 +38,13 @@ class CasesDetail extends Component {
           </div>
           <div className='f-l2' />
         </div>
-        <div className='row'>
-          <div className='f-l2' />
-          <div className='row f-l8 border-s1-vertical' style={{marginTop: 48, paddingTop: 48, paddingBottom: 48, flexWrap: 'wrap' }}>
-            <div className='f-s1'><CaseStats title='Färgrymd' array={colorSpace}/></div>
-            <div className='f-s1'><CaseStats title='Verktyg' array={tools}/></div>
-            <div className='f-s1'><CaseStats title='Uppgifter' array={tasks}/></div>
-            <div className='f-s1'><CaseStats title='Uppdragsgivare' array={employer}/></div>
+        <div id='case-stats-outer-container' className='row'>
+          <div  className='f-l2' />
+          <div id='case-stats-container' className='row f-l8 border-s1-vertical'>
+            <div className='case-stat '><CaseStats title='Färgrymd' array={colorSpace}/></div>
+            <div className='case-stat '><CaseStats title='Verktyg' array={tools}/></div>
+            <div className='case-stat '><CaseStats title='Uppgifter' array={tasks}/></div>
+            <div className='case-stat '><CaseStats title='Uppdragsgivare' array={employer}/></div>
           </div>
           <div className='f-l2' />
         </div>

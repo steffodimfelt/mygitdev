@@ -46,7 +46,6 @@ class App extends Component {
           className='m-s24 pointer pink-bg shadow-1'
           onClick={toggleMenu}
         >
-        
           <h2 style={{color: 'white', verticalAlign: 'middle', lineHeight: '1.5rem', fontSize:'1.5rem'}}>+</h2>
         </div>
       

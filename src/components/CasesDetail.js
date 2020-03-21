@@ -10,10 +10,8 @@ class CasesDetail extends Component {
     if (setCase == null){return null;}
     const {imgThumb, headline, textLong, colorSpace, tools, tasks, employer} = setCase;
   
-    
-
     return (
-      <div className='fixed-top full-hundred lightgrey-bg overflow-auto' >
+      <div className='fixed-top full-hundred lightgrey-bg overflow-auto' style={{paddingBottom: 48}} >
         <div style={{backgroundImage: 'url(' + imgThumb + ')', width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
         <div className='col'>
           <div className='row'>
@@ -34,19 +32,16 @@ class CasesDetail extends Component {
         </div>
         <div className='row'>
           <div className='f-l2' />
-          <div className='f-l8 row' >
-            
-              <div className='f-l12' style={{ backgroundImage: 'url(' + imgThumb + ')', width: '100%', height: 400,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
-              <div className='f-l1' />
-            
-              <div className='f-l12' style={{backgroundImage: 'url(' + imgThumb + ')', width: '100%', height: 400,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
-            
+          <div className='f-l8 row' > 
+            <div className='f-l12' style={{ backgroundImage: 'url(' + imgThumb + ')', width: '100%', height: 400,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
+            <div className='f-l1' />
+            <div className='f-l12' style={{backgroundImage: 'url(' + imgThumb + ')', width: '100%', height: 400,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />          
           </div>
           <div className='f-l2' />
         </div>
         <div className='row'>
           <div className='f-l2' />
-          <div className='row f-l8'>
+          <div className='row f-l8  border-s1-vertical' style={{marginTop: 48, paddingTop: 48, paddingBottom: 48 }}>
             <div className='f-s1'><CaseStats title='Färgrymd' array={colorSpace}/></div>
             <div className='f-s1'><CaseStats title='Verktyg' array={tools}/></div>
             <div className='f-s1'><CaseStats title='Uppgifter' array={tasks}/></div>

@@ -15,7 +15,8 @@ class CasesList extends Component {
       .map((caseItem) => {
         return (
           <p
-            style={{lineHeight: 1, margin: 0, padding: 0, marginBottom: 10, fontSize: 12, cursor: 'pointer'}}
+            style={{ margin: 0, padding: 0, marginBottom: 10, fontSize: '1.5rem', lineHeight: '2.2rem', cursor: 'pointer'}}
+            className='lightgrey-col'
             key={caseItem.id}
             onClick={() => this.setButtonDispatch(caseItem)}
           >

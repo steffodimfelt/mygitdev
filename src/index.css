@@ -104,6 +104,7 @@ body {
 .p-h-s24 {padding-left: 1.5rem; padding-right: 1.5rem;}
 .p-v-s16 {padding-top: 1rem; padding-bottom: 1rem;}
 .p-v-s24 {padding-top: 1.5rem; padding-bottom: 1.5rem;}
+.p-v-s24-s48 {padding-top: 1.5rem; padding-bottom: 3rem;}
 
 /* Margin */
 .m-s4 {margin: 0.25rem}

@@ -8,7 +8,7 @@ const CaseMenu = () => {
         <div className='f-s3'></div>
         <div className='f-s3 f-m2 p-v-s24 lightgrey-col'></div>
         {/* <div className='f-s3 f-m2 p-v-s24 lightgrey-col'><h2>ALLA</h2></div> */}
-        <div className='f-s6 f-m7'>
+        <div className='f-s6 f-m7 '>
           <CasesList />
         </div> 
       </div>

@@ -194,16 +194,6 @@ body {
 .CapDown{text-transform: none;}
 
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Baloo+Thambi+2:400,700&display=swap');
-/* @font-face {
-  font-family: 'BalooThambi2';
-  src: local('BalooThambi2-Bold'), url(./fonts/BalooThambi2-Bold.ttf) format('truetype');
-  src: local('BalooThambi2-Regular'), url(./fonts/BalooThambi2-Regular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'AbrilFatface';
-  src: local('AbrilFatface-Regular'), url(./fonts/AbrilFatface-Regular.ttf) format('truetype');
-} */
-
 
 p{
   font-family: 'Baloo Thambi 2';
@@ -217,6 +207,21 @@ h1{
 h2, h3, h4, h5, h6{
   font-family: 'Baloo Thambi 2';
   font-weight: 700;
+}
+
+p.case-list-item {
+  margin: 0; 
+  padding: 0; 
+  margin-bottom: 0.75rem; 
+  font-size: 1.5rem; 
+  line-height: 2.2rem; 
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  p.case-list-item {
+    font-size: 1.1rem; 
+    line-height: 1.5rem; 
+  }
 }
 
 /* Borders */

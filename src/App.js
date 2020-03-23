@@ -10,6 +10,25 @@ import {toggleMenu} from './actions';
 class App extends Component {
   render() {
     const toggleMenu = () => {this.props.toggleMenu(!this.props.toggle);};
+    const MenuOn = () => {
+      return (<div id='menu' 
+        style={{width: '4rem', height: '4rem', borderRadius: '50%', position: 'fixed', textAlign: 'center'}}
+        className='m-s24 pointer pink-bg shadow-1'
+        onClick={toggleMenu}
+      >
+        <h2 style={{color: 'white', verticalAlign: 'middle', lineHeight: '1.5rem', fontSize:'1.5rem'}}>+</h2>
+      </div>);
+    };
+    const MenuOff = () => {
+      return (<div id='menu' 
+        style={{width: '4rem', height: '4rem', borderRadius: '50%', position: 'fixed', textAlign: 'center'}}
+        className='m-s24 pointer purple-bg shadow-1'
+        onClick={toggleMenu}
+      >
+        <h2 style={{color: 'white', verticalAlign: 'middle', lineHeight: '1.5rem', fontSize:'1.5rem'}}>-</h2>
+      </div>);
+    };
+    
     return (
       <div className='col'>
         <div className='row '>
@@ -38,14 +57,15 @@ class App extends Component {
         <CasesDetail/>
 
         {this.props.toggle ? <CaseMenu /> : null }
-
-        <div id='menu' 
+        {this.props.toggle ? <MenuOff /> : <MenuOn /> }
+        
+        {/* <div id='menu' 
           style={{width: '4rem', height: '4rem', borderRadius: '50%', position: 'fixed', textAlign: 'center'}}
           className='m-s24 pointer pink-bg shadow-1'
           onClick={toggleMenu}
         >
           <h2 style={{color: 'white', verticalAlign: 'middle', lineHeight: '1.5rem', fontSize:'1.5rem'}}>+</h2>
-        </div>
+        </div> */}
       
       </div>
     );

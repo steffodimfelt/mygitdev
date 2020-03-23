@@ -326,3 +326,10 @@ and (orientation: landscape) {
   }
 }
 
+/* Menu style */
+.menu-style {
+  width: 4rem; 
+  height: 4rem; 
+  border-radius: 50%; 
+  position: fixed; 
+}

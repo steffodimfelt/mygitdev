@@ -12,10 +12,10 @@ class App extends Component {
     const toggleMenu = () => {this.props.toggleMenu(!this.props.toggle);};
     const MenuOn = () => {
       return (<div id='menu' 
-        className='menu-style m-s24 pointer pink-bg shadow-1'
+        className='menu-style m-s24 pointer pink-bg shadow-1 '
         onClick={toggleMenu}
       >
-        <h2 style={{color: 'white', verticalAlign: 'middle', lineHeight: '1.5rem', fontSize:'1.5rem'}}>+</h2>
+        <img  src={require('./img/icons/menu.svg')} style={{width: '2rem'}} />  
       </div>);
     };
     const MenuOff = () => {
@@ -23,7 +23,7 @@ class App extends Component {
         className='menu-style m-s24 pointer purple-bg shadow-1'
         onClick={toggleMenu}
       >
-        <h2 style={{color: 'white', verticalAlign: 'middle', lineHeight: '1.5rem', fontSize:'1.5rem'}}>-</h2>
+        <img  src={require('./img/icons/close.svg')} style={{width: '2rem'}} />
       </div>);
     };
     

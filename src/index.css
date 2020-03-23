@@ -332,4 +332,7 @@ and (orientation: landscape) {
   height: 4rem; 
   border-radius: 50%; 
   position: fixed; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

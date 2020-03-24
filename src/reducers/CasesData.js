@@ -22,9 +22,9 @@ export default () => {
       'link':'http:241production.com',
       'linkName':'241production',
       'imgThumb':{
-        'img1': 'film/2x1_narcissus_01.jpg',
-        'img2': 'film/2x1_narcissus_01.jpg',
-        'img3': 'film/2x1_narcissus_01.jpg',
+        'img1': 'film/narcissus/2x1_narcissus_01.jpg',
+        'img2': 'film/narcissus/1x1_narcissus_01.jpg',
+        'img3': 'film/narcissus/1x1_narcissus_02.jpg',
       }
     },
     {
@@ -50,9 +50,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'film/2x1-varderingsmannen-01.jpg',
-        'img2': 'film/2x1-varderingsmannen-01.jpg',
-        'img3': 'film/2x1-varderingsmannen-01.jpg',
+        'img1': 'film/varderingsmannen/2x1-varderingsmannen-01.jpg',
+        'img2': 'film/varderingsmannen/2x2-varderingsmannen-03.jpg',
+        'img3': 'film/varderingsmannen/1x1-varderingsmannen-02.jpg',
       }
     },
     {
@@ -78,9 +78,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb':{
-        'img1': 'film/2x1_amalia01.jpg',
-        'img2': 'film/2x1_amalia01.jpg',
-        'img3': 'film/2x1_amalia01.jpg',
+        'img1': 'film/amalia/3x1_amalia02.jpg',
+        'img2': 'film/amalia/2x1_amalia01.jpg',
+        'img3': 'film/amalia/1x1_amalia03.jpg',
       }
     },
     {
@@ -107,9 +107,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/2x1FriskisV15_4.jpg',
-        'img2': 'print/2x1FriskisV15_4.jpg',
-        'img3': 'print/2x1FriskisV15_4.jpg',
+        'img1': 'print/Friskis/KatalogV15/2x1FriskisV15_4.jpg',
+        'img2': 'print/Friskis/KatalogV15/2X2FriskisV15_1.jpg',
+        'img3': 'print/Friskis/KatalogV15/1x1FriskisV15_2.jpg',
       }
     },
     {
@@ -133,9 +133,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/2x1-Ahlsell01.jpg',
-        'img2': 'print/2x1-Ahlsell01.jpg',
-        'img3': 'print/2x1-Ahlsell01.jpg',
+        'img1': 'print/Ahlsell/Klader-katalog/2x1-Ahlsell01.jpg',
+        'img2': 'print/Ahlsell/Klader-katalog/2x2-Ahlsell02.jpg',
+        'img3': 'print/Ahlsell/Klader-katalog/1x1-Ahlsell01.jpg',
       }
     },
     {
@@ -160,9 +160,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'other/2x1-Elektro02.jpg',
-        'img2': 'other/2x1-Elektro02.jpg',
-        'img3': 'other/2x1-Elektro02.jpg',
+        'img1': 'other/Elektro/2x1-Elektro02.jpg',
+        'img2': 'other/Elektro/2x1-Elektro03.jpg',
+        'img3': 'other/Elektro/2x2-Elektro01.jpg',
       }
     },
     // {
@@ -212,9 +212,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/2x1-SvS-Katalog01.jpg',
-        'img2': 'print/2x1-SvS-Katalog01.jpg',
-        'img3': 'print/2x1-SvS-Katalog01.jpg',
+        'img1': 'print/SvenskaSpel/katalog/2x1-SvS-Katalog01.jpg',
+        'img2': 'print/SvenskaSpel/katalog/2x2-SvS-Katalog02.jpg',
+        'img3': 'print/SvenskaSpel/katalog/1x1-SvS-Katalog03.jpg',
       }
     },
     {
@@ -240,9 +240,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'web/2x2-Metallica02.jpg',
-        'img2': 'web/2x2-Metallica02.jpg',
-        'img3': 'web/2x2-Metallica02.jpg',
+        'img1': 'web/Metallica/2x1-Metallica01.jpg',
+        'img2': 'web/Metallica/2x2-Metallica02.jpg',
+        'img3': 'web/Metallica/1x1-Metallica04.jpg',
       },
     },
     {
@@ -268,9 +268,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'foto/2x1-Skandia-lansering03.jpg',
-        'img2': 'foto/2x1-Skandia-lansering03.jpg',
-        'img3': 'foto/2x1-Skandia-lansering03.jpg',
+        'img1': 'foto/Skandia/lansering/2x1-Skandia-lansering03.jpg',
+        'img2': 'foto/Skandia/lansering/2x2-Skandia-Lansering01.jpg',
+        'img3': 'foto/Skandia/lansering/2x1-Skandia-lansering02.jpg',
       }
     },
     {
@@ -296,9 +296,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/2x1-Friskis-Affisch-06.jpg',
-        'img2': 'print/2x1-Friskis-Affisch-06.jpg',
-        'img3': 'print/2x1-Friskis-Affisch-06.jpg',
+        'img1': 'print/Friskis/AffischV16/2x1-Friskis-Affisch-06.jpg',
+        'img2': 'print/Friskis/AffischV16/2x2-Friskis-Affisch-01.jpg',
+        'img3': 'print/Friskis/AffischV16/2x2-Friskis-Affisch-05.jpg',
       }
     },
     {
@@ -324,9 +324,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/1x1-TeliaSonera-Hex-03.jpg',
-        'img2': 'print/1x1-TeliaSonera-Hex-03.jpg',
-        'img3': 'print/1x1-TeliaSonera-Hex-03.jpg',
+        'img1': 'print/TeliaSonera/general_meeting/2x2-TeliaSonera-Hex-02.jpg',
+        'img2': 'print/TeliaSonera/general_meeting/1x1-TeliaSonera-Hex-03.jpg',
+        'img3': 'print/TeliaSonera/general_meeting/1x1-TeliaSonera-Hex-04.jpg',
       }
     },
     {
@@ -353,7 +353,7 @@ export default () => {
       'linkName':null,
       'imgThumb': {
         'img1': '3d/Scandic/vip/2x1-Scandic-Necessar-04.jpg',
-        'img2': '3d/Scandic/vip/1x1-Scandic-Necessar-01',
+        'img2': '3d/Scandic/vip/1x1-Scandic-Necessar-01.jpg',
         'img3': '3d/Scandic/vip/2x1-Scandic-Necessar-04.jpg',
       }
     },
@@ -380,9 +380,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'web/2x1Swedbank-Shop03.jpg',
-        'img2': 'web/2x1Swedbank-Shop03.jpg',
-        'img3': 'web/2x1Swedbank-Shop03.jpg',
+        'img1': 'web/Swedbank/Internshop/2x1Swedbank-Shop03.jpg',
+        'img2': 'web/Swedbank/Internshop/2x2Swedbank-Shop02.jpg',
+        'img3': 'web/Swedbank/Internshop/2x2Swedbank-Shop01.jpg',
       }
     },
     {
@@ -407,9 +407,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/2x1-JW-Whiskey-03.jpg',
-        'img2': 'print/2x1-JW-Whiskey-03.jpg',
-        'img3': 'print/2x1-JW-Whiskey-03.jpg',
+        'img1': 'print/JW/whiskey/2x1-JW-01.jpg',
+        'img2': 'print/JW/whiskey/2x1-JW-Whiskey-03.jpg',
+        'img3': 'print/JW/whiskey/2x2-JW-Whiskey-04.jpg',
       }
     },
     {
@@ -435,9 +435,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'other/2x1-Telia-Sport-02.jpg',
-        'img2': 'other/2x1-Telia-Sport-02.jpg',
-        'img3': 'other/2x1-Telia-Sport-02.jpg',
+        'img1': 'other/Telia/illustrationer/2x2-Telia-Mouse-01.jpg',
+        'img2': 'other/Telia/illustrationer/2x1-Telia-Sport-02.jpg',
+        'img3': 'other/Telia/illustrationer/1x1-Telia-Mouse-04.jpg',
       }
     },
     {
@@ -463,9 +463,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/2x1-Lofbergs-Camp-03.jpg',
-        'img2': 'print/2x1-Lofbergs-Camp-03.jpg',
-        'img3': 'print/2x1-Lofbergs-Camp-03.jpg',
+        'img1': 'print/Lofbergs/Butik/2x1-Lofbergs-Camp-03.jpg',
+        'img2': 'print/Lofbergs/Butik/2x2-Lofbergs-campaign-01.jpg',
+        'img3': 'print/Lofbergs/Butik/2x2-Lofbergs-campaign-02.jpg',
       }
     },
     {
@@ -491,9 +491,9 @@ export default () => {
       'link':'https//:vimeo.com128578317',
       'linkName':'Friskis&Svettis, Instruktionsfilm 2014',
       'imgThumb': {
-        'img1': 'film/2x1-Friskis-Instr-04.jpg',
-        'img2': 'film/2x1-Friskis-Instr-04.jpg',
-        'img3': 'film/2x1-Friskis-Instr-04.jpg',
+        'img1': 'film/Friskis/Instruktionsfilm/2x1-Friskis-Instr-04.jpg',
+        'img2': 'film/Friskis/Instruktionsfilm/2x1-Friskis-Instr-02.jpg',
+        'img3': 'film/Friskis/Instruktionsfilm/2x1-Friskis-Instr-03.jpg',
       }
     },
     {
@@ -519,9 +519,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/2x1-Scandic-Hangtags02.jpg',
-        'img2': 'print/2x1-Scandic-Hangtags02.jpg',
-        'img3': 'print/2x1-Scandic-Hangtags02.jpg'
+        'img1': 'print/Scandic/Hangtags/2x1-Scandic-Hangtags02.jpg',
+        'img2': 'print/Scandic/Hangtags/2x2-Scandic-Hangtags01.jpg',
+        'img3': 'print/Scandic/Hangtags/1x1-Scandic-Hangtags03.jpg'
       }
     },
     {
@@ -546,9 +546,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/2x1-AHL-rutor-06.jpg',
-        'img2': 'print/2x1-AHL-rutor-06.jpg',
-        'img3': 'print/2x1-AHL-rutor-06.jpg'
+        'img1': 'print/Ahlsell/Rutor/2x1-AHL-rutor-06.jpg',
+        'img2': 'print/Ahlsell/Rutor/2x2-AHL-rutor-03.jpg',
+        'img3': 'print/Ahlsell/Rutor/1x1-AHL-rutor-01.jpg'
       }
     },
     {
@@ -574,9 +574,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/2x2-AHL-kartong-02.jpg',
-        'img2': 'print/2x2-AHL-kartong-02.jpg',
-        'img3': 'print/2x2-AHL-kartong-02.jpg'
+        'img1': 'print/Ahlsell/Kartong/2x1-AHL-Kartong-03.jpg',
+        'img2': 'print/Ahlsell/Kartong/2x2-AHL-kartong-02.jpg',
+        'img3': 'print/Ahlsell/Kartong/2x2-AHL-kartong-01.jpg'
       }
     },
     // {
@@ -626,9 +626,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/2x2-Skandia-Summer-03.jpg',
-        'img2': 'print/2x2-Skandia-Summer-03.jpg',
-        'img3': 'print/2x2-Skandia-Summer-03.jpg'
+        'img1': 'print/Skandia/Sommarpres/2x1-Skandia-Summer-01.jpg',
+        'img2': 'print/Skandia/Sommarpres/2x2-Skandia-Summer-03.jpg',
+        'img3': 'print/Skandia/Sommarpres/1x1-Skandia-Summer-04.jpg'
       }
     },
     {
@@ -654,9 +654,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'web/2x1-DoIt-02.jpg',
-        'img2': 'web/2x1-DoIt-02.jpg',
-        'img3': 'web/2x1-DoIt-02.jpg'
+        'img1': 'web/DoIt/2x1-DoIt-03.jpg',
+        'img2': 'web/DoIt/2x1-DoIt-02.jpg',
+        'img3': 'web/DoIt/2x2-DoIt-01.jpg'
       }
     },
     {
@@ -682,9 +682,9 @@ export default () => {
       'link':'',
       'linkName':'',
       'imgThumb': {
-        'img1': 'web/2x2-SP-Webb-03.jpg',
-        'img2': 'web/2x2-SP-Webb-03.jpg',
-        'img3': 'web/2x2-SP-Webb-03.jpg'
+        'img1': 'web/StadiumPromotion/Webb/2x2-SP-Webb-03.jpg',
+        'img2': 'web/StadiumPromotion/Webb/2x1-SP-Webb-01.jpg',
+        'img3': 'web/StadiumPromotion/Webb/2x1-SP-Webb-02.jpg'
       }
     },
     {
@@ -710,9 +710,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'film/2x1-SP-Case-03.jpg',
-        'img2': 'film/2x1-SP-Case-03.jpg',
-        'img3': 'film/2x1-SP-Case-03.jpg'
+        'img1': 'film/StadiumPromotion/Casefilmer/2x1-SP-Case-03.jpg',
+        'img2': 'film/StadiumPromotion/Casefilmer/2x1-SP-Case-04.jpg',
+        'img3': 'film/StadiumPromotion/Casefilmer/2x1-SP-Case-05.jpg'
       }
     },
     {
@@ -738,9 +738,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'print/2x1-SvS-Magnet02.jpg',
-        'img2': 'print/2x1-SvS-Magnet02.jpg',
-        'img3': 'print/2x1-SvS-Magnet02.jpg'
+        'img1': 'print/SvenskaSpel/magnet/2x1-SvS-Magnet02.jpg',
+        'img2': 'print/SvenskaSpel/magnet/2x2-SvS-Magnet01.jpg',
+        'img3': 'print/SvenskaSpel/magnet/2x1-SvS-Magnet03.jpg'
       }
     },
     {
@@ -766,9 +766,9 @@ export default () => {
       'link':'http//:pontusolgrim.se',
       'linkName':'pontusolgrim.se',
       'imgThumb': {
-        'img1': 'web/2X1-Pontus-Portfolio-2015-03.jpg',
-        'img2': 'web/2X1-Pontus-Portfolio-2015-03.jpg',
-        'img3': 'web/2X1-Pontus-Portfolio-2015-03.jpg'
+        'img1': 'web/PontusOlgrim/2015/2X1-Pontus-Portfolio-2015-03.jpg',
+        'img2': 'web/PontusOlgrim/2015/2x2-Pontus-Portfolio-2015-01.jpg',
+        'img3': 'web/PontusOlgrim/2015/2x2-Pontus-Portfolio-2015-02.jpg'
       }
     },
     {
@@ -793,9 +793,9 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'other/2x1-Par-Nar-2008-02.jpg',
-        'img2': 'other/2x1-Par-Nar-2008-02.jpg',
-        'img3': 'other/2x1-Par-Nar-2008-02.jpg'
+        'img1': 'other/OppetSpar-2008/2x1-Par-Nar-2008-02.jpg',
+        'img2': 'other/OppetSpar-2008/2x1-Par-Nar-2008-01.jpg',
+        'img3': 'other/OppetSpar-2008/2x1-Par-Nar-2008-03.jpg'
       }
     },
     {
@@ -821,9 +821,9 @@ export default () => {
       'link':'',
       'linkName':'',
       'imgThumb': {
-        'img1': '3d/Stockholmsmassan/BoC-01.jpg',
-        'img2': '3d/Stockholmsmassan/BoC-02.jpg',
-        'img3': '3d/Stockholmsmassan/BoC-03.jpg'
+        'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
+        'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
+        'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
       }
     },
     {
@@ -849,9 +849,9 @@ export default () => {
       'link':'http//:www.stockholmfurniturelightfair.sevara-utstallningar-pa-stockholm-furniture---light-faireditors-choice-starteditors-choice-2017',
       'linkName':'Editors\' Choice Award 2017',
       'imgThumb': {
-        'img1': 'other/ECA-02.jpg',
-        'img2': 'other/ECA-02.jpg',
-        'img3': 'other/ECA-02.jpg'
+        'img1': 'other/ECA/ECA-02.jpg',
+        'img2': 'other/ECA/ECA-04.jpg',
+        'img3': 'other/ECA/ECA-05.jpg'
       }
     }
   ];

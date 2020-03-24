@@ -336,3 +336,8 @@ and (orientation: landscape) {
   justify-content: center;
   align-items: center;
 }
+
+/* Case Menu Link */
+#case-top-link{
+  text-decoration: none;
+}

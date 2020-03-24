@@ -4,16 +4,16 @@ import PropTypes from 'prop-types';
 import CaseStats from './CaseStats';
 
 class CasesDetail extends Component {
-  
+
   render() {
     const {setCase} = this.props;
     if (setCase == null){return null;}
     const {imgThumb, headline, textLong, colorSpace, tools, tasks, employer} = setCase;
   
     return (
-      <div className='fixed-top full-hundred lightgrey-bg overflow-auto' style={{paddingBottom: 48}} >
-        <div style={{backgroundImage: 'url(' + imgThumb + ')', width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
-        <div className='col'>
+      <div id='case-top' className='lightgrey-bg' style={{paddingBottom: 48}} >
+        <div  style={{backgroundImage: 'url(' + imgThumb + ')', width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
+        <div   className='col'>
           <div className='row'>
             <div className='f-l2' />
             <div id='case-title' className='f-l8 text-align-center'>

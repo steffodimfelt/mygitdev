@@ -14,13 +14,18 @@ class CasesList extends Component {
       .sort((a, b) => a.headline.localeCompare(b.headline))
       .map((caseItem) => {
         return (
-          <p
-            className='case-list-item lightgrey-col'
+          <a 
+            id='case-top-link'
+            href="#case-top"
             key={caseItem.id}
-            onClick={() => this.setButtonDispatch(caseItem)}
           >
-            {caseItem.headline} 
-          </p>
+            <p
+              className='case-list-item lightgrey-col'
+              onClick={() => this.setButtonDispatch(caseItem)}
+            >
+              {caseItem.headline} 
+            </p>
+          </a>
         );
       });
   }

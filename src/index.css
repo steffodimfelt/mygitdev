@@ -154,6 +154,10 @@ body {
   right:0;
  }
 
+ .center-align-self {
+   align-self: center;
+ }
+
 
  .img-center-adjust{left: -5%;}
  @media(max-width: 992px) {

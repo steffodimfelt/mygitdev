@@ -16,7 +16,7 @@ class CasesList extends Component {
         return (
           <a 
             id='case-top-link'
-            href="#case-top"
+            href="#case"
             key={caseItem.id}
           >
             <p

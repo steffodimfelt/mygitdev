@@ -11,7 +11,7 @@ class CasesDetail extends Component {
     const {imgThumb, headline, textLong, colorSpace, tools, tasks, employer} = setCase;
   
     return (
-      <div id='case-top' className='lightgrey-bg' style={{paddingBottom: 48}} >
+      <div id='case' className='lightgrey-bg' style={{paddingBottom: 48}} >
         <div  style={{backgroundImage: 'url(' + imgThumb + ')', width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
         <div   className='col'>
           <div className='row'>

@@ -12,7 +12,7 @@ class CasesDetail extends Component {
   
     return (
       <div id='case' className='lightgrey-bg' style={{paddingBottom: 48}} >
-        <div  style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb + ')', width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
+        <div  style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img1 + ')', width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
         <div   className='col'>
           {/* RUBRIK */}
           <div className='row'>
@@ -34,8 +34,8 @@ class CasesDetail extends Component {
           <div className='row' style={{paddingTop: 24}}>
             <div className='f-s0 f-l2' />
             <div id='case-images' className='f-s1 f-l8' > 
-              <div className='cover-image' style={{ backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb + ')' }} />
-              <div className='cover-image' style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb + ')' }} />          
+              <div className='cover-image' style={{ backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img2 + ')' }} />
+              <div className='cover-image' style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img3 + ')' }} />          
             </div>
             <div className='f-s0 f-l2' />
           </div>

@@ -1,6 +1,8 @@
+import { default as categoriesArray } from '../CategoriesConstants.js';
 const initState = {
   toggleMenu: false,
-  categories: {}
+  categories: {},
+  categoryArray: categoriesArray
 };
 
 export default (state=initState, action) => {

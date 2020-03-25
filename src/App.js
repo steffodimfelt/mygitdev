@@ -62,14 +62,10 @@ class App extends Component {
     };
     
     return (
-      <div  className='col'>
-        
+      <div  className='col'>       
         {!this.props.setCase ? <FirstPage /> : <CasesDetail />}
-        
-
         {this.props.toggle ? <CaseMenu categories={this.props.categories} /> : null }
-        {this.props.toggle ? <MenuOff /> : <MenuOn /> }
-       
+        {this.props.toggle ? <MenuOff /> : <MenuOn /> }      
       </div>
     );
   }

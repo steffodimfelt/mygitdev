@@ -1,4 +1,5 @@
 import {setCaseDetails, setCategories} from '../actions/index';
+import { default as categoriesArray } from '../CategoriesConstants.js';
 
 // START: Help functions  ----------
 const convertStringToNumberArray = string => {
@@ -61,8 +62,8 @@ const casesMiddleware = store => next => action => {
 
   if (action.type === 'MAP_CATEGORIES') {
     let category_LOCAL = {};
-    const categoryArray = ['film', 'print', 'web', 'photo', '3d', 'other', 'event',  'mobile'];
-    for (const category of categoryArray) {
+    
+    for (const category of categoriesArray) {
       category_LOCAL[category] = setCasesByCategory(casesData, category);
     }
     store.dispatch(setCategories(category_LOCAL));

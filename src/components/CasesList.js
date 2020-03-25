@@ -12,7 +12,6 @@ class CasesList extends Component {
 
   clientPick (clientID) {
     let pickClient = '';
-    
     for (const value of  this.props.clientsData) {
       const clientConvert = parseInt(clientID);
       if (value.id === clientConvert) {
@@ -38,9 +37,6 @@ class CasesList extends Component {
                 {caseItem.headline} 
               </p>
               {this.clientPick (caseItem.client)}
-              {/* <p className='case-list-item lightgrey-col' >
-                {caseItem.client} 
-              </p> */}
             </div>
           </a>
         );

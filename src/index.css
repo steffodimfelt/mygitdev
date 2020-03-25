@@ -259,7 +259,7 @@ p.case-list-item {
   and (min-device-width: 320px) 
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+   {
     .hero-font{
       font-size: 5vw; 
       line-height: 5vw;
@@ -275,7 +275,7 @@ p.case-list-item {
 and (min-device-width: 414px) 
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) {
+ {
   .hero-font{
     font-size: 5vw; 
     line-height: 5vw; 

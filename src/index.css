@@ -299,14 +299,14 @@ and (min-device-width: 320px)
 and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
-  .hero-font{
+  /* .hero-font{
     font-size: 10vw; 
     line-height: 10vw;
     letter-spacing: 0;
-  };
+  }; */
   h1{
-    font-size: 5vw; 
-    line-height: 5vw;
+    font-size: 4vw; 
+    line-height: 4vw;
     letter-spacing: 0;
   };
   h6{
@@ -322,14 +322,14 @@ and (min-device-width: 414px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3)
 and (orientation: portrait) {
-.hero-font{
+/* .hero-font{
   font-size: 10vw; 
   line-height: 10vw; 
   letter-spacing: 0;
-};
+}; */
 h1{
-  font-size: 5vw; 
-  line-height: 5vw;
+  font-size: 4vw; 
+  line-height: 4vw;
   letter-spacing: 0;
 };
 h6{

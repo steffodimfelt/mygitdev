@@ -44,7 +44,7 @@ class App extends Component {
               {/* Inner part */}
               <div className='f-s10 row pink-border border-s6 border-solid p-s6 '>
                 <div className='f-s2 flex pink-bg '>
-                  <h1 className='hero-font lightgrey-col'>Steffos Portfolio</h1>
+                  <h1 className='lightgrey-col hero-font '>Steffos Portfolio</h1>
                 </div>
               </div>
               {/* END: Inner part */}

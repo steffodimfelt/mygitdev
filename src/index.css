@@ -242,104 +242,6 @@ p.case-list-item {
   border-bottom: 0.16rem solid #EA3F95;
 }
 
-/* Hero Title */
-.hero-title{
-  position: absolute;
-}
-.hero-font{
-  font-size: 12vw; 
-  line-height: 12vw; 
-  margin: auto; 
-  text-align: center;
-  letter-spacing: 0.5rem;
-}
-
-
-@media (min-width: 992px) {
-  .hero-font{font-size: 8vw; line-height: 7rem}
-}
-
-/* iPhone 5, 5S, 5C, 5SE, 6, 6S, 7 and 8*/
- @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    .hero-font, h1{
-      font-size: 6vw; 
-      line-height: 6vw;
-      letter-spacing: 0;
-    };
-    h6{
-      font-size: 1rem;
-      margin-top: 1.5rem;
-    };
-}
-
-/* iPhone 6+, 7+, 8+ and X */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 812px)
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) {
-  .hero-font, h1{
-    font-size: 6vw; 
-    line-height: 6vw; 
-    letter-spacing: 0;
-  };
-  h6{
-    font-size: 1rem;
-    margin-top: 1.5rem;
-  };
-}
-
-/* iPhone 5, 5S, 5C, 5SE, 6, 6S, 7 and 8*/
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-  /* .hero-font{
-    font-size: 10vw; 
-    line-height: 10vw;
-    letter-spacing: 0;
-  }; */
-  h1{
-    font-size: 4vw; 
-    line-height: 4vw;
-    letter-spacing: 0;
-  };
-  h6{
-    font-size: 0.5rem;
-    margin-top: 2rem;
-  };
-  .case-stat{padding-left: 0;}
-}
-
-/* iPhone 6+, 7+, 8+ and X */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 812px)
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) {
-/* .hero-font{
-  font-size: 10vw; 
-  line-height: 10vw; 
-  letter-spacing: 0;
-}; */
-h1{
-  font-size: 4vw; 
-  line-height: 4vw;
-  letter-spacing: 0;
-};
-h6{
-  font-size: 0.5rem;
-  margin-top: 2rem;
-};
-.case-stat{padding-left: 0;}
-}
-
-
 /* Case Images */
 #case-images, .cover-image {width: 100%}
 #case-images, .cover-image:last-child {margin-top: 2rem}
@@ -418,4 +320,109 @@ h6{
   text-decoration: none;
 }
 
+/* Hero Title */
+.hero-title{
+  position: absolute;
+}
+.hero-font{
+  font-size: 12vw; 
+  line-height: 12vw; 
+  margin: auto; 
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
 
+
+@media (min-width: 992px) {
+  .hero-font{font-size: 8vw; line-height: 7rem}
+}
+
+/* iPhone 5, 5S, 5C, 5SE, 6, 6S, 7 and 8*/
+ @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .hero-font{
+      font-size: 6vw; 
+      line-height: 6vw;
+      letter-spacing: 0;
+    };
+    #case-title > h1{
+      font-size: 2rem; 
+      line-height: 2rem;
+      letter-spacing: 0;
+    };
+    #case-title > h6{
+      font-size: 1rem;
+      margin-top: 1.5rem;
+    };
+}
+
+/* iPhone 6+, 7+, 8+ and X */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) {
+  .hero-font{
+    font-size: 6vw; 
+    line-height: 6vw; 
+    letter-spacing: 0;
+  };
+  #case-title > h1{
+    font-size: 2rem; 
+    line-height: 2rem;
+    letter-spacing: 0;
+  };
+  #case-title > h6{
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  };
+}
+
+/* iPhone 5, 5S, 5C, 5SE, 6, 6S, 7 and 8*/
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  .hero-font{
+    font-size: 10vw; 
+    line-height: 10vw;
+    letter-spacing: 0;
+  };
+  #case-title > h1{
+    font-size: 2rem; 
+    line-height: 2rem;
+    letter-spacing: 0;
+  };
+  #case-title > h6{
+    font-size: 0.5rem;
+    margin-top: 2rem;
+  };
+  .case-stat{padding-left: 0;}
+}
+
+/* iPhone 6+, 7+, 8+ and X */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
+.hero-font{
+  font-size: 12vw; 
+  line-height: 12vw; 
+  letter-spacing: 0;
+};
+#case-title > h1{
+  font-size: 2rem; 
+  line-height: 2rem;
+  letter-spacing: 0;
+};
+#case-title > h6{
+  font-size: 0.5rem;
+  margin-top: 2rem;
+};
+.case-stat{padding-left: 0;}
+}

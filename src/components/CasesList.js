@@ -9,6 +9,19 @@ class CasesList extends Component {
     this.props.selectCase(caseItem);
     this.props.toggleMenu(!this.props.toggle);
   }
+
+  clientPick (clientID) {
+    let pickClient = '';
+    
+    this.props.clientsData.map(value => {
+      const clientConvert = parseInt(clientID)
+      if (value.id === clientConvert) {
+        pickClient = value.title;
+      }
+    });
+    return <p className='case-list-item-client lightgrey-col' >{pickClient}</p>;
+  }
+
   createCasesList(){     
     return this.props.casesData
       .sort((a, b) => a.headline.localeCompare(b.headline))
@@ -19,12 +32,15 @@ class CasesList extends Component {
             href="#case"
             key={caseItem.id}
           >
-            <p
-              className='case-list-item lightgrey-col'
-              onClick={() => this.setButtonDispatch(caseItem)}
-            >
-              {caseItem.headline} 
-            </p>
+            <div onClick={() => this.setButtonDispatch(caseItem)}>
+              <p className='case-list-item lightgrey-col'>
+                {caseItem.headline} 
+              </p>
+              {this.clientPick (caseItem.client)}
+              {/* <p className='case-list-item lightgrey-col' >
+                {caseItem.client} 
+              </p> */}
+            </div>
           </a>
         );
       });
@@ -42,6 +58,7 @@ class CasesList extends Component {
 function mapStateToProps(state) {
   return{
     casesData: state.casesData,
+    clientsData: state.clientsData,
     toggle: state.caseReducers.toggleMenu,
   };
 }
@@ -51,6 +68,7 @@ function matchDispatchToProps(dispatch) {
 
 CasesList.propTypes = {
   casesData: PropTypes.array.isRequired,
+  clientsData: PropTypes.array.isRequired,
   selectCase: PropTypes.func.isRequired,
   toggleMenu: PropTypes.func.isRequired,
   toggle: PropTypes.bool.isRequired

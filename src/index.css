@@ -223,18 +223,22 @@ h2, h3, h4, h5{
 
 p.case-list-item {
   margin: 0; 
-  padding: 0; 
-  margin-bottom: 0.75rem; 
+  padding: 0;  
   font-size: 1.5rem; 
   line-height: 2.2rem; 
   cursor: pointer;
 }
-@media (max-width: 600px) {
-  p.case-list-item {
-    font-size: 1.1rem; 
-    line-height: 1.5rem; 
-  }
+p.case-list-item-client {
+  margin: 0; 
+  padding: 0; 
+  margin-bottom: 0.75rem; 
+  font-size: 1rem; 
+  line-height: 2rem; 
+  cursor: pointer;
+  margin-top: -0.5rem;
+  border-bottom: #F5F3EE solid 1px;
 }
+
 
 /* Borders */
 .border-solid{border-style: solid}

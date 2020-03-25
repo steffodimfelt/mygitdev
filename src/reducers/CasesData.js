@@ -26,6 +26,9 @@ export default () => {
         'img1': 'film/narcissus/2x1_narcissus_01.jpg',
         'img2': 'film/narcissus/1x1_narcissus_01.jpg',
         'img3': 'film/narcissus/1x1_narcissus_02.jpg',
+      },
+      'categories': {
+        'film': true,
       }
     },
     {
@@ -55,6 +58,9 @@ export default () => {
         'img1': 'film/varderingsmannen/2x1-varderingsmannen-01.jpg',
         'img2': 'film/varderingsmannen/2x2-varderingsmannen-03.jpg',
         'img3': 'film/varderingsmannen/1x1-varderingsmannen-02.jpg',
+      },
+      'categories': {
+        'film': true,
       }
     },
     {
@@ -84,6 +90,9 @@ export default () => {
         'img1': 'film/amalia/3x1_amalia02.jpg',
         'img2': 'film/amalia/2x1_amalia01.jpg',
         'img3': 'film/amalia/1x1_amalia03.jpg',
+      },
+      'categories': {
+        'film': true,
       }
     },
     {
@@ -114,6 +123,10 @@ export default () => {
         'img1': 'print/Friskis/KatalogV15/2x1FriskisV15_4.jpg',
         'img2': 'print/Friskis/KatalogV15/2X2FriskisV15_1.jpg',
         'img3': 'print/Friskis/KatalogV15/1x1FriskisV15_2.jpg',
+      },
+      'categories': {
+        'print': true,
+        'photo': true,
       }
     },
     {
@@ -141,6 +154,10 @@ export default () => {
         'img1': 'print/Ahlsell/Klader-katalog/2x1-Ahlsell01.jpg',
         'img2': 'print/Ahlsell/Klader-katalog/2x2-Ahlsell02.jpg',
         'img3': 'print/Ahlsell/Klader-katalog/1x1-Ahlsell01.jpg',
+      },
+      'categories': {
+        'print': true,
+        'photo': true,
       }
     },
     {
@@ -169,6 +186,9 @@ export default () => {
         'img1': 'other/Elektro/2x1-Elektro02.jpg',
         'img2': 'other/Elektro/2x1-Elektro03.jpg',
         'img3': 'other/Elektro/2x2-Elektro01.jpg',
+      },
+      'categories': {
+        'other': true,
       }
     },
     // {
@@ -222,6 +242,10 @@ export default () => {
         'img1': 'print/SvenskaSpel/katalog/2x1-SvS-Katalog01.jpg',
         'img2': 'print/SvenskaSpel/katalog/2x2-SvS-Katalog02.jpg',
         'img3': 'print/SvenskaSpel/katalog/1x1-SvS-Katalog03.jpg',
+      },
+      'categories': {
+        'print': true,
+        'photo': true,
       }
     },
     {
@@ -252,6 +276,9 @@ export default () => {
         'img2': 'web/Metallica/2x2-Metallica02.jpg',
         'img3': 'web/Metallica/1x1-Metallica04.jpg',
       },
+      'categories': {
+        'web': true,
+      }
     },
     {
       'id':'11',
@@ -280,6 +307,10 @@ export default () => {
         'img1': 'foto/Skandia/lansering/2x1-Skandia-lansering03.jpg',
         'img2': 'foto/Skandia/lansering/2x2-Skandia-Lansering01.jpg',
         'img3': 'foto/Skandia/lansering/2x1-Skandia-lansering02.jpg',
+      },
+      'categories': {
+        'photo': true,
+        'event': true,
       }
     },
     {
@@ -309,6 +340,10 @@ export default () => {
         'img1': 'print/Friskis/AffischV16/2x1-Friskis-Affisch-06.jpg',
         'img2': 'print/Friskis/AffischV16/2x2-Friskis-Affisch-01.jpg',
         'img3': 'print/Friskis/AffischV16/2x2-Friskis-Affisch-05.jpg',
+      },
+      'categories': {
+        'print': true,
+        '3d': true,
       }
     },
     {
@@ -338,6 +373,10 @@ export default () => {
         'img1': 'print/TeliaSonera/general_meeting/2x2-TeliaSonera-Hex-02.jpg',
         'img2': 'print/TeliaSonera/general_meeting/1x1-TeliaSonera-Hex-03.jpg',
         'img3': 'print/TeliaSonera/general_meeting/1x1-TeliaSonera-Hex-04.jpg',
+      },
+      'categories': {
+        'print': true,
+        'event': true,
       }
     },
     {
@@ -367,6 +406,9 @@ export default () => {
         'img1': '3d/Scandic/vip/2x1-Scandic-Necessar-04.jpg',
         'img2': '3d/Scandic/vip/1x1-Scandic-Necessar-01.jpg',
         'img3': '3d/Scandic/vip/2x1-Scandic-Necessar-04.jpg',
+      },
+      'categories': {
+        '3d': true,
       }
     },
     {
@@ -396,6 +438,9 @@ export default () => {
         'img1': 'web/Swedbank/Internshop/2x1Swedbank-Shop03.jpg',
         'img2': 'web/Swedbank/Internshop/2x2Swedbank-Shop02.jpg',
         'img3': 'web/Swedbank/Internshop/2x2Swedbank-Shop01.jpg',
+      },
+      'categories': {
+        'web': true,
       }
     },
     {
@@ -424,6 +469,9 @@ export default () => {
         'img1': 'print/JW/whiskey/2x1-JW-01.jpg',
         'img2': 'print/JW/whiskey/2x1-JW-Whiskey-03.jpg',
         'img3': 'print/JW/whiskey/2x2-JW-Whiskey-04.jpg',
+      },
+      'categories': {
+        'print': true,
       }
     },
     {
@@ -453,6 +501,9 @@ export default () => {
         'img1': 'other/Telia/illustrationer/2x2-Telia-Mouse-01.jpg',
         'img2': 'other/Telia/illustrationer/2x1-Telia-Sport-02.jpg',
         'img3': 'other/Telia/illustrationer/1x1-Telia-Mouse-04.jpg',
+      },
+      'categories': {
+        'other': true,
       }
     },
     {
@@ -482,6 +533,9 @@ export default () => {
         'img1': 'print/Lofbergs/Butik/2x1-Lofbergs-Camp-03.jpg',
         'img2': 'print/Lofbergs/Butik/2x2-Lofbergs-campaign-01.jpg',
         'img3': 'print/Lofbergs/Butik/2x2-Lofbergs-campaign-02.jpg',
+      },
+      'categories': {
+        'print': true,
       }
     },
     {
@@ -511,6 +565,10 @@ export default () => {
         'img1': 'film/Friskis/Instruktionsfilm/2x1-Friskis-Instr-04.jpg',
         'img2': 'film/Friskis/Instruktionsfilm/2x1-Friskis-Instr-02.jpg',
         'img3': 'film/Friskis/Instruktionsfilm/2x1-Friskis-Instr-03.jpg',
+      },
+      'categories': {
+        'film': true,
+        '3d': true,
       }
     },
     {
@@ -540,6 +598,10 @@ export default () => {
         'img1': 'print/Scandic/Hangtags/2x1-Scandic-Hangtags02.jpg',
         'img2': 'print/Scandic/Hangtags/2x2-Scandic-Hangtags01.jpg',
         'img3': 'print/Scandic/Hangtags/1x1-Scandic-Hangtags03.jpg'
+      },
+      'categories': {
+        'print': true,
+        'photo': true,
       }
     },
     {
@@ -568,6 +630,9 @@ export default () => {
         'img1': 'print/Ahlsell/Rutor/2x1-AHL-rutor-06.jpg',
         'img2': 'print/Ahlsell/Rutor/2x2-AHL-rutor-03.jpg',
         'img3': 'print/Ahlsell/Rutor/1x1-AHL-rutor-01.jpg'
+      },
+      'categories': {
+        'print': true,
       }
     },
     {
@@ -597,6 +662,9 @@ export default () => {
         'img1': 'print/Ahlsell/Kartong/2x1-AHL-Kartong-03.jpg',
         'img2': 'print/Ahlsell/Kartong/2x2-AHL-kartong-02.jpg',
         'img3': 'print/Ahlsell/Kartong/2x2-AHL-kartong-01.jpg'
+      },
+      'categories': {
+        'print': true,
       }
     },
     // {
@@ -650,6 +718,10 @@ export default () => {
         'img1': 'print/Skandia/Sommarpres/2x1-Skandia-Summer-01.jpg',
         'img2': 'print/Skandia/Sommarpres/2x2-Skandia-Summer-03.jpg',
         'img3': 'print/Skandia/Sommarpres/1x1-Skandia-Summer-04.jpg'
+      },
+      'categories': {
+        'print': true,
+        'photo': true,
       }
     },
     {
@@ -679,6 +751,9 @@ export default () => {
         'img1': 'web/DoIt/2x1-DoIt-03.jpg',
         'img2': 'web/DoIt/2x1-DoIt-02.jpg',
         'img3': 'web/DoIt/2x2-DoIt-01.jpg'
+      },
+      'categories': {
+        'web': true,
       }
     },
     {
@@ -708,6 +783,9 @@ export default () => {
         'img1': 'web/StadiumPromotion/Webb/2x2-SP-Webb-03.jpg',
         'img2': 'web/StadiumPromotion/Webb/2x1-SP-Webb-01.jpg',
         'img3': 'web/StadiumPromotion/Webb/2x1-SP-Webb-02.jpg'
+      },
+      'categories': {
+        'web': true,
       }
     },
     {
@@ -737,6 +815,9 @@ export default () => {
         'img1': 'film/StadiumPromotion/Casefilmer/2x1-SP-Case-03.jpg',
         'img2': 'film/StadiumPromotion/Casefilmer/2x1-SP-Case-04.jpg',
         'img3': 'film/StadiumPromotion/Casefilmer/2x1-SP-Case-05.jpg'
+      },
+      'categories': {
+        'film': true,
       }
     },
     {
@@ -766,6 +847,9 @@ export default () => {
         'img1': 'print/SvenskaSpel/magnet/2x1-SvS-Magnet02.jpg',
         'img2': 'print/SvenskaSpel/magnet/2x2-SvS-Magnet01.jpg',
         'img3': 'print/SvenskaSpel/magnet/2x1-SvS-Magnet03.jpg'
+      },
+      'categories': {
+        'print': true,
       }
     },
     {
@@ -795,6 +879,9 @@ export default () => {
         'img1': 'web/PontusOlgrim/2015/2X1-Pontus-Portfolio-2015-03.jpg',
         'img2': 'web/PontusOlgrim/2015/2x2-Pontus-Portfolio-2015-01.jpg',
         'img3': 'web/PontusOlgrim/2015/2x2-Pontus-Portfolio-2015-02.jpg'
+      },
+      'categories': {
+        'web': true,
       }
     },
     {
@@ -823,6 +910,10 @@ export default () => {
         'img1': 'other/OppetSpar-2008/2x1-Par-Nar-2008-02.jpg',
         'img2': 'other/OppetSpar-2008/2x1-Par-Nar-2008-01.jpg',
         'img3': 'other/OppetSpar-2008/2x1-Par-Nar-2008-03.jpg'
+      },
+      'categories': {
+        'other': true,
+        'event': true,
       }
     },
     {
@@ -852,14 +943,19 @@ export default () => {
         'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
         'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
         'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
+      },
+      'categories': {
+        'print': true,
+        '3d': true,
+        'event': true,
       }
     },
     {
       'id':'31',
       'show':'1',
       'headline':'Editors\' Choice Award',
-      'textShort':'Design av logotype, emblem och diplom till Editors\' Choice Award.',
-      'textLong':'<span class=\'CapUp\'>Jag fick äran och möjligheten<span> <span class="CapDown">att designa logotype, emblem och diplom till Editors\' Choice Award. Presigepriset delas ut under Stockholm Furniture & Light Fair i kategorierna Rising Star, Best Stand och Best Product. Juryn består av chefredaktörer från några av Europas viktigaste designforum. <BR><BR>  <BR>Logotypeen tar avstamp från vinnarstatyetten som är formgiven av den svenska designern Lisa Hilland. Den består av tre kuber i olika storlekar, där en av sidorna på varje kub är en spegel. <BR><BR>  <BR>Man ville ha en modern, luftig och handritad känsla. Jag jobbade igenom logotypeen i tre steg: <BR><BR>1) Jag började med att ta fram tre moodboards som var och en gav en känsla av design och modernt formspråk. Jag satt med de ansvariga för ECA och diskuterade id\u00e9er, tankar och mål.<BR><BR>2) Utifrån diskussionerna skissade jag upp ett antal utkast som skickades fram och tillbaka några gånger för justeringar och input. <BR>3) En slutversion togs fram och färgsattes i en mörk grön färg som används i manualet till Furniture & Light Fair. Tanken var att färgen ändras från år till år.<BR><BR>4) Ett positivt och ett negativt grönt och vitt emblem togs fram. Dessutom gjorde jag även svartvita varianter. De olika emblemen är tänkta att att användas på olika medier - exempelvis är vita kuber på grön bakgrund tänkt att användas i sociala medier på nätet. <BR><BR>5) Slutligen tog jag fram diplomet, där kukberna gjordes i guldvinyl som monterades för hand innan de ramades in. Juryn fick skriva sin namnteckningar. <BR><BR>Det blev lite pill, men hela projektet gick förvånansvärt smidigt. Jag är väldigt stolt över slutresultatet och jag vet att de ansvariga blev mycket nöjda.</span>',
+      'textShort':'Design av logotyp, emblem och diplom till Editors\' Choice Award.',
+      'textLong':'<span class=\'CapUp\'>Jag fick äran och möjligheten<span> <span class="CapDown">att designa logotyp, emblem och diplom till Editors\' Choice Award. Presigepriset delas ut under Stockholm Furniture & Light Fair i kategorierna Rising Star, Best Stand och Best Product. Juryn består av chefredaktörer från några av Europas viktigaste designforum. <BR><BR>  <BR>Logotypen tar avstamp från vinnarstatyetten som är formgiven av den svenska designern Lisa Hilland. Den består av tre kuber i olika storlekar, där en av sidorna på varje kub är en spegel. <BR><BR>  <BR>Man ville ha en modern, luftig och handritad känsla. Jag jobbade igenom logotypen i tre steg: <BR><BR>1) Jag började med att ta fram tre moodboards som var och en gav en känsla av design och modernt formspråk. Jag satt med de ansvariga för ECA och diskuterade id\u00e9er, tankar och mål.<BR><BR>2) Utifrån diskussionerna skissade jag upp ett antal utkast som skickades fram och tillbaka några gånger för justeringar och input. <BR><BR>3) En slutversion togs fram och färgsattes i en mörk grön färg som används i manualet till Furniture & Light Fair. Tanken var att färgen ändras från år till år.<BR><BR>4) Ett positivt och ett negativt grönt och vitt emblem togs fram. Dessutom gjorde jag även svartvita varianter. De olika emblemen är tänkta att att användas på olika medier - exempelvis är vita kuber på grön bakgrund tänkt att användas i sociala medier på nätet. <BR><BR>5) Slutligen tog jag fram diplomet, där kukberna gjordes i guldvinyl som monterades för hand innan de ramades in. Juryn fick skriva sin namnteckningar. <BR><BR>Det blev lite pill, men hela projektet gick förvånansvärt smidigt. Jag är väldigt stolt över slutresultatet och jag vet att de ansvariga blev mycket nöjda.</span>',
       'textPin':'Design av logotype, emblem och diplom till Editors\' Choice Award.',
       'caseInputDate':'2017-03-08',
       'showArt':'1',
@@ -873,7 +969,7 @@ export default () => {
       'imgCollageSetup':'122,123,124,125,126',
       'tools':'2,4',
       'tasks':'28,26,25',
-      'format':'Diplom: A3-storlek<BR>Logotypeer i varierande storlek. ',
+      'format':'Diplom: A3-storlek<BR>Logotyper i varierande storlek. ',
       'year':'2017',
       'link':'http//:www.stockholmfurniturelightfair.sevara-utstallningar-pa-stockholm-furniture---light-faireditors-choice-starteditors-choice-2017',
       'linkName':'Editors\' Choice Award 2017',
@@ -881,6 +977,11 @@ export default () => {
         'img1': 'other/ECA/ECA-02.jpg',
         'img2': 'other/ECA/ECA-04.jpg',
         'img3': 'other/ECA/ECA-05.jpg'
+      },
+      'categories': {
+        'print': true,
+        'other': true,
+        'event': true,
       }
     }
   ];

@@ -205,11 +205,16 @@ p{
   font-weight: 400;
 }
 
-h1{
+h1, h6{
   font-family: 'Abril Fatface';
 }
 
-h2, h3, h4, h5, h6{
+h6{
+  font-size: 2rem;
+  margin-top: -2rem;
+}
+
+h2, h3, h4, h5{
   font-family: 'Baloo Thambi 2';
   font-weight: 700;
 }
@@ -245,7 +250,9 @@ p.case-list-item {
   font-size: 12vw; 
   line-height: 12vw; 
   margin: auto; 
-  text-align: center}
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
 
 /* iPhone 5, 5S, 5C, 5SE, 6, 6S, 7 and 8*/
  @media only screen 

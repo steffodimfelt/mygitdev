@@ -40,7 +40,7 @@ const convertNumberToArray = (arrayIn, dataArrayIn) => {
 
 const casesMiddleware = store => next => action => {
 //   console.log('store', store.getState());
-  const {colorsData, employerData, toolsData, tasksData} = store.getState();
+  const {colorsData, employerData, toolsData, tasksData, clientsData} = store.getState();
   if (action.type === 'SELECT_CASE') {
     let case_LOCAL = action.payload; 
 
@@ -55,6 +55,9 @@ const casesMiddleware = store => next => action => {
 
     // Set Tasks of project
     case_LOCAL.tasks = convertNumberToArray(case_LOCAL.tasks, tasksData);
+
+    // Set Clients of project
+    case_LOCAL.client = convertNumberToArray(case_LOCAL.client, clientsData);
 
     // Dispatch new project setup
     store.dispatch(setCaseDetails(case_LOCAL));

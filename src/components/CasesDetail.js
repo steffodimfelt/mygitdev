@@ -8,7 +8,10 @@ class CasesDetail extends Component {
   render() {
     const {setCase} = this.props;
     if (setCase == null){return null;}
-    const {imgThumb, headline, textLong, colorSpace, tools, tasks, employer, textShort} = setCase;
+    const {
+      imgThumb, headline, textLong, 
+      colorSpace, tools, tasks, 
+      employer, client, textShort} = setCase;
   
     return (
       <div id='case' className='lightgrey-bg' style={{paddingBottom: 48}} >
@@ -19,6 +22,7 @@ class CasesDetail extends Component {
             <div className='f-l2' />
             <div id='case-title' className='f-l8 text-align-center'>
               <h1 className='pink-col'>{headline}</h1>
+              <h6 className='pink-col' >{client}</h6>
             </div>
             <div className='f-l2' />
           </div>

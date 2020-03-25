@@ -301,7 +301,7 @@ and (orientation: landscape) {
   #case-images,
   #case-text,
   #case-title
-  {padding-left: 24px; padding-right: 24px;}
+  {padding-left: 1.5rem; padding-right: 1.5rem;}
   #case-title > h1 {font-size: 10vw; line-height: 10vw}
 }
 
@@ -320,20 +320,35 @@ and (orientation: landscape) {
 
 /* Case Stats */
 #case-stats-container{
-  margin-top: 48px; 
-  padding-top: 48px; 
-  padding-bottom: 48px;
+  margin-top: 3rem; 
+  padding-top: 3rem; 
+  padding-bottom: 3rem;
   flex-wrap: wrap;
 }
-.case-stat{width: 50%}
+.case-stat{width: 50%; padding-left: 1rem;}
+
+/* @media screen
+and (min-width: 600px)
+and (max-width: 992px) 
+{
+  #case-stats-container{
+    padding-left: 6rem;
+  }
+} */
 
 @media (min-width: 992px){
-  .case-stat{width: 25%}
+  .case-stat{width: 25%; padding-left: 0;}
+}
+@media (min-width: 1200px){
+  .case-stat{padding-left: 1.2rem;}
+}
+@media (min-width: 1600px){
+  .case-stat{padding-left: 2rem;}
 }
 @media (max-width: 992px){
   #case-stats-outer-container{
-    padding-right: 24px; 
-    padding-left: 24px;
+    padding-right: 1.5rem; 
+    padding-left: 1.5rem;
   }
 }
 

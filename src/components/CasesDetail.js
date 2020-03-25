@@ -55,14 +55,14 @@ class CasesDetail extends Component {
         </div>
         {/* STATS */}
         <div id='case-stats-outer-container' className='row'>
-          <div  className='f-s0 f-l2' />
-          <div id='case-stats-container' className='row f-s1 f-l8 border-s1-vertical'>
+          <div  className='f-s0 f-m2 ' />
+          <div id='case-stats-container' className='row f-s6 f-m8  border-s1-vertical'>
             <div className='case-stat '><CaseStats title='Färgrymd' array={colorSpace}/></div>
             <div className='case-stat '><CaseStats title='Verktyg' array={tools}/></div>
             <div className='case-stat '><CaseStats title='Uppgifter' array={tasks}/></div>
             <div className='case-stat '><CaseStats title='Uppdragsgivare' array={employer}/></div>
           </div>
-          <div className='f-s0 f-l2' />
+          <div className='f-s0 f-m2 ' />
         </div>
       </div>
     );

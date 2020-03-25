@@ -13,12 +13,13 @@ class CasesList extends Component {
   clientPick (clientID) {
     let pickClient = '';
     
-    this.props.clientsData.map(value => {
-      const clientConvert = parseInt(clientID)
+    for (const value of  this.props.clientsData) {
+      const clientConvert = parseInt(clientID);
       if (value.id === clientConvert) {
         pickClient = value.title;
       }
-    });
+    }
+
     return <p className='case-list-item-client lightgrey-col' >{pickClient}</p>;
   }
 

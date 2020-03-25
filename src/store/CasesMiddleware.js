@@ -1,32 +1,17 @@
-import {setCaseDetails} from '../actions/index';
-// Help functions
-// const convertStringToStringArray = string => {
-//   return string.split(',');
-// };
+import {setCaseDetails, setCategories} from '../actions/index';
 
+// START: Help functions  ----------
 const convertStringToNumberArray = string => {
   return string.split(',').map(Number);
 };
 
-// const switchNumberArrayToStringArray = (numberArray, stringArray) => {
-//   const newArray = [];
-//   numberArray.map((numberValue) => {
-//     stringArray.map((stringValue, stringIndex) => {
-//       if (numberValue === stringIndex) {
-//         newArray.push(stringArray[numberValue]);
-//       }
-//     });
-//   });
-//   return newArray;
-// };
-
 const pickIDFromNumberPushTitleToArray = (objectArray, numberArray) => {
-  const newArray = [];
-  numberArray.map(numberValue => {
-    objectArray.map(objectValue => {
+  let newArray = [];
+  for (const numberValue of numberArray) {
+    for (const objectValue of objectArray) {
       objectValue.id === numberValue && (newArray.push(objectValue.title));
-    });
-  });
+    }
+  }
   newArray.sort((a, b) => a.localeCompare(b));
   return newArray;
 };
@@ -37,10 +22,21 @@ const convertNumberToArray = (arrayIn, dataArrayIn) => {
   return newArrayOut;
 };
 
+const setCasesByCategory = (arrayIn, categoryTitle) => {
+  let newArray = [];
+  for (const caseObject of arrayIn) {
+    caseObject.categories[categoryTitle] && (newArray.push(caseObject));
+  }
+  newArray.sort((a, b) => a.headline.localeCompare(b.headline));
+  return newArray;
+};
+
+
+// END: Help functions  ----------
 
 const casesMiddleware = store => next => action => {
-//   console.log('store', store.getState());
-  const {colorsData, employerData, toolsData, tasksData, clientsData} = store.getState();
+  // console.log('store', store.getState());
+  const {casesData, colorsData, employerData, toolsData, tasksData, clientsData} = store.getState();
   if (action.type === 'SELECT_CASE') {
     let case_LOCAL = action.payload; 
 
@@ -62,6 +58,16 @@ const casesMiddleware = store => next => action => {
     // Dispatch new project setup
     store.dispatch(setCaseDetails(case_LOCAL));
   }
+
+  if (action.type === 'MAP_CATEGORIES') {
+    let category_LOCAL = {};
+    const categoryArray = ['film', 'print', 'web', 'photo', '3d', 'other', 'event',  'mobile'];
+    for (const category of categoryArray) {
+      category_LOCAL[category] = setCasesByCategory(casesData, category);
+    }
+    store.dispatch(setCategories(category_LOCAL));
+  }
+
   next(action);
 };
 

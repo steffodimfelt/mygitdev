@@ -13,3 +13,12 @@ export const toggleMenu = bool => ({
   payload: bool
 });
 
+export const mapCategories = () => ({
+  type: 'MAP_CATEGORIES',
+});
+
+export const setCategories = object => ({
+  type: 'SET_CATEGORIES',
+  payload: object,
+});
+

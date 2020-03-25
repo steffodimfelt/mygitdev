@@ -259,14 +259,15 @@ p.case-list-item {
   and (min-device-width: 320px) 
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
-   {
-    .hero-font{
-      font-size: 5vw; 
-      line-height: 5vw;
+  and (orientation: landscape) {
+    .hero-font, h1{
+      font-size: 6vw; 
+      line-height: 6vw;
       letter-spacing: 0;
     };
     h6{
       font-size: 1rem;
+      margin-top: 1.5rem;
     };
 }
 
@@ -275,16 +276,53 @@ p.case-list-item {
 and (min-device-width: 414px) 
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3)
- {
-  .hero-font{
-    font-size: 5vw; 
-    line-height: 5vw; 
+and (orientation: landscape) {
+  .hero-font, h1{
+    font-size: 6vw; 
+    line-height: 6vw; 
     letter-spacing: 0;
   };
   h6{
     font-size: 1rem;
+    margin-top: 1.5rem;
   };
 }
+
+/* iPhone 5, 5S, 5C, 5SE, 6, 6S, 7 and 8*/
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  .hero-font, h1{
+    font-size: 5vw; 
+    line-height: 5vw;
+    letter-spacing: 0;
+  };
+  h6{
+    font-size: 0.5rem;
+    margin-top: 1.5rem;
+  };
+}
+
+/* iPhone 6+, 7+, 8+ and X */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) {
+.hero-font, h1{
+  font-size: 6vw; 
+  line-height: 6vw; 
+  letter-spacing: 0;
+};
+h6{
+  font-size: 0.5rem;
+  margin-top: 1.5rem;
+};
+}
+
+
 @media (min-width: 992px) {
   .hero-font{font-size: 8vw; line-height: 7rem}
 }

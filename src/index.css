@@ -349,8 +349,9 @@ p.case-list-item {
       letter-spacing: 0;
     };
     #case-title > h1{
-      font-size: 2rem; 
-      line-height: 2rem;
+      font-size: 1rem; 
+      line-height: 1rem;
+      color: blue;
       letter-spacing: 0;
     };
     #case-title > h6{
@@ -371,9 +372,10 @@ and (orientation: landscape) {
     letter-spacing: 0;
   };
   #case-title > h1{
-    font-size: 2rem; 
-    line-height: 2rem;
+    font-size: 1rem; 
+    line-height: 1rem;
     letter-spacing: 0;
+    color: blue;
   };
   #case-title > h6{
     font-size: 1rem;
@@ -393,9 +395,10 @@ and (orientation: portrait) {
     letter-spacing: 0;
   };
   #case-title > h1{
-    font-size: 2rem; 
-    line-height: 2rem;
+    font-size: 1rem; 
+    line-height: 1rem;
     letter-spacing: 0;
+    color: chartreuse;
   };
   #case-title > h6{
     font-size: 0.5rem;
@@ -416,9 +419,10 @@ and (orientation: portrait) {
   letter-spacing: 0;
 };
 #case-title > h1{
-  font-size: 2rem; 
-  line-height: 2rem;
+  font-size: 1rem; 
+  line-height: 1rem;
   letter-spacing: 0;
+  color: chartreuse;
 };
 #case-title > h6{
   font-size: 0.5rem;

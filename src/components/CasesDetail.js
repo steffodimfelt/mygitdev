@@ -21,7 +21,7 @@ class CasesDetail extends Component {
           <div className='row'>
             <div className='f-l2' />
             <div id='case-title' className='f-l8 text-align-center'>
-              <h1 id='case-title-header'>{headline}</h1>
+              <h1 className='pink-col'>{headline}</h1>
               <h6 className='pink-col' >{client}</h6>
             </div>
             <div className='f-l2' />

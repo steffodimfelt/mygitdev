@@ -266,7 +266,9 @@ p.case-list-item {
 }
 
 @media only screen and (max-width: 992px) {
-  #case-title > h1 {font-size: 10vw; line-height: 10vw; color: gold}
+  #case-title > h1 {font-size: 8vw; line-height: 8vw;}
+  #case-title > h6 {font-size: 5vw; line-height: 5vw; margin-top: 2rem}
+  .case-stat{padding-left: 0;}
 }
 
 @media (min-width: 1200px) {
@@ -290,6 +292,10 @@ p.case-list-item {
   flex-wrap: wrap;
 }
 .case-stat{width: 50%; padding-left: 1rem;}
+
+@media (max-width: 600px){
+  .case-stat{padding-left: 0;}
+}
 
 @media (min-width: 992px){
   .case-stat{width: 25%; padding-left: 0;}
@@ -351,16 +357,6 @@ p.case-list-item {
       line-height: 6vw;
       letter-spacing: 0;
     };
-    #case-title > h1{
-      font-size: 1rem; 
-      line-height: 1rem;
-      color: blue;
-      letter-spacing: 0;
-    };
-    #case-title > h6{
-      font-size: 1rem;
-      margin-top: 1.5rem;
-    };
 }
 
 /* iPhone 6+, 7+, 8+ and X */
@@ -373,16 +369,6 @@ and (orientation: landscape) {
     font-size: 6vw; 
     line-height: 6vw; 
     letter-spacing: 0;
-  };
-  #case-title > h1{
-    font-size: 1rem; 
-    line-height: 1rem;
-    letter-spacing: 0;
-    color: blue;
-  };
-  #case-title > h6{
-    font-size: 1rem;
-    margin-top: 1.5rem;
   };
 }
 
@@ -397,17 +383,7 @@ and (orientation: portrait) {
     line-height: 10vw;
     letter-spacing: 0;
   };
-  #case-title > h1{
-    font-size: 1rem; 
-    line-height: 1rem;
-    letter-spacing: 0;
-    color: chartreuse;
-  };
-  #case-title > h6{
-    font-size: 0.5rem;
-    margin-top: 2rem;
-  };
-  .case-stat{padding-left: 0;}
+  
 }
 
 /* iPhone 6+, 7+, 8+ and X */
@@ -421,15 +397,4 @@ and (orientation: portrait) {
   line-height: 12vw; 
   letter-spacing: 0;
 };
-#case-title > h1{
-  font-size: 1rem; 
-  line-height: 1rem;
-  letter-spacing: 0;
-  color: chartreuse;
-};
-#case-title > h6{
-  font-size: 0.5rem;
-  margin-top: 2rem;
-};
-.case-stat{padding-left: 0;}
 }

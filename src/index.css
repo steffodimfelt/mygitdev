@@ -105,6 +105,7 @@ body {
 .p-v-s16 {padding-top: 1rem; padding-bottom: 1rem;}
 .p-v-s24 {padding-top: 1.5rem; padding-bottom: 1.5rem;}
 .p-v-s24-s60 {padding-top: 1.5rem; padding-bottom: 4.5rem;}
+.p-t-s24 {padding-top: 2rem;}
 
 /* Margin */
 .m-s4 {margin: 0.25rem}
@@ -116,6 +117,7 @@ body {
 .m-s32 {margin: 2rem}
 .m-h-s16 {margin-left: 1rem; margin-right: 1rem;}
 .m-v-s16 {margin-top: 1rem; margin-bottom: 1rem;}
+.m-t-s16 {margin-top: 1rem;}
 
 /* Absolute Positions */
 .fixed-top {position: fixed; top: 0; left: 0}

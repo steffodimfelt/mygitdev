@@ -20,7 +20,7 @@ class CasesDetail extends Component {
           {/* RUBRIK */}
           <div className='row'>
             <div className='f-l2' />
-            <div id='case-title' className='f-l8 text-align-center'>
+            <div id='case-title' className='f-l8 text-align-center p-t-s24 '>
               <h1 className='pink-col'>{headline}</h1>
               <h6 className='pink-col' >{client}</h6>
             </div>

@@ -262,8 +262,12 @@ p.case-list-item {
   and (orientation: landscape) {
     .hero-font{
       font-size: 5vw; 
-      line-height: 5vw; 
-    }
+      line-height: 5vw;
+      letter-spacing: 0;
+    };
+    h6{
+      font-size: 1rem;
+    };
 }
 
 /* iPhone 6+, 7+, 8+ and X */
@@ -275,7 +279,11 @@ and (orientation: landscape) {
   .hero-font{
     font-size: 5vw; 
     line-height: 5vw; 
-  }
+    letter-spacing: 0;
+  };
+  h6{
+    font-size: 1rem;
+  };
 }
 @media (min-width: 992px) {
   .hero-font{font-size: 8vw; line-height: 7rem}

@@ -106,6 +106,7 @@ body {
 .p-v-s24 {padding-top: 1.5rem; padding-bottom: 1.5rem;}
 .p-v-s24-s60 {padding-top: 1.5rem; padding-bottom: 4.5rem;}
 .p-t-s24 {padding-top: 2rem;}
+.p-r-s24 {padding-right: 2rem;}
 
 /* Margin */
 .m-s4 {margin: 0.25rem}
@@ -221,11 +222,12 @@ h2, h3, h4, h5{
   font-weight: 700;
 }
 
-p.case-list-item {
+p.case-list-item,
+p.case-list-item-categories {
   margin: 0; 
   padding: 0;  
   font-size: 1.5rem; 
-  line-height: 2.2rem; 
+  line-height: 1.5rem; 
   cursor: pointer;
 }
 p.case-list-item-client {
@@ -238,6 +240,14 @@ p.case-list-item-client {
   margin-top: -0.5rem;
   border-bottom: #F5F3EE solid 1px;
 }
+
+p.case-list-item-categories {
+  border-bottom: #F5F3EE solid 1px;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.text-align-right{text-align: right;}
 
 
 /* Borders */

@@ -24,12 +24,12 @@ class CategoriesList extends Component {
       console.log(this.props.categoryArray)
       return this.props.categoryArray
         .map(value => {
-          return (<p key={value} className='case-list-item lightgrey-col'>{categorySwitch(value)}</p>)
+          return (<p key={value} className='case-list-item-categories text-align-right lightgrey-col'>{categorySwitch(value)}</p>)
         });
     };
 
     return (
-      <div className='p-v-s24-s60'>
+      <div className='p-v-s24-s60 p-r-s24'>
         <CategoryList />
       </div>
     );

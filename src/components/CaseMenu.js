@@ -8,12 +8,12 @@ const CaseMenu = ({categories}) => {
   return (
     <div className='row' >
       <div className='row fixed-top w-100-per f-s12 full-screen pink-bg overflow-auto'>
-        <div className='f-s3'></div>
-        <div className='f-s3 f-m2 p-v-s24 lightgrey-col'></div>
-        <div className='f-s3 f-m2 p-v-s24 lightgrey-col'>
+        
+        
+        <div className='f-s6 f-m4 lightgrey-col'>
           <CategoriesList />
         </div>
-        <div className='f-s6 f-m7 '>
+        <div className='f-s6 f-m8 '>
           <CasesList />
         </div> 
       </div>

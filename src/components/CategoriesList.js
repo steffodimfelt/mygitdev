@@ -32,14 +32,14 @@ class CategoriesList extends Component {
     const CategoryList = () => {
       return this.props.categoryArray
         .map(value => {
-          const bgColor = this.state.selectedCategory === value 
+          const styles = this.state.selectedCategory === value 
             ? 'case-list-item-categories text-align-right lightgrey-col purple-bg' 
             : 'case-list-item-categories text-align-right lightgrey-col pink-bg';
           return (
             <div
               key={value} 
               onClick={() => setSelectedCategory(value)}
-              className={bgColor}
+              className={styles}
             >
               <p>
                 {categorySwitch(value)}

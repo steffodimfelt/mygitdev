@@ -1,5 +1,6 @@
 import {setCaseDetails, setCategories} from '../actions/index';
-import { default as categoriesArray } from '../CategoriesConstants.js';
+import { default as categoriesArray } from '../CategoriesConstants';
+import {EVERYTHING} from '../CategoriesConstants';
 
 // START: Help functions  ----------
 const convertStringToNumberArray = string => {
@@ -66,9 +67,9 @@ const casesMiddleware = store => next => action => {
     for (const category of categoriesArray) {
       category_LOCAL[category] = setCasesByCategory(casesData, category);
     }
+    category_LOCAL[EVERYTHING] = casesData;
     store.dispatch(setCategories(category_LOCAL));
   }
-
   next(action);
 };
 

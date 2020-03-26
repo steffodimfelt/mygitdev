@@ -43,7 +43,6 @@ class CategoriesList extends Component {
 }
 
 function mapStateToProps(state) {
-  console.log("state", state);
   return{
     categories: state.caseReducers.categories,
     categoryArray: state.caseReducers.categoryArray,

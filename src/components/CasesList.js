@@ -61,7 +61,7 @@ function mapStateToProps(state) {
     casesData: state.casesData,
     clientsData: state.clientsData,
     toggle: state.caseReducers.toggleMenu,
-    selectedCategory: state.selectedCategory
+    selectedCategory: state.selectedCategory,
   };
 }
 function matchDispatchToProps(dispatch) {
@@ -74,7 +74,7 @@ CasesList.propTypes = {
   selectCase: PropTypes.func.isRequired,
   toggleMenu: PropTypes.func.isRequired,
   toggle: PropTypes.bool.isRequired,
-  selectedCategory: PropTypes.array,
+  selectedCategory: PropTypes.array
 };
 
 export default connect(mapStateToProps, matchDispatchToProps)(CasesList);

@@ -6,8 +6,15 @@ import { FILM, PRINT, WEB, PHOTO, THREE_D, OTHER, EVENT, MOBILE, EVERYTHING } fr
 import {pickCategory} from '../actions';
 
 class CategoriesList extends Component {
-  
+
+  state = {selectedCategory: EVERYTHING}
+
   render() {
+    const setSelectedCategory = (valueIn) => {
+      this.setState({selectedCategory: valueIn});
+      this.props.pickCategory(this.props.categories[valueIn]);
+    };
+ 
     const categorySwitch = title => {
       switch(title) {
       case FILM: return 'Film';
@@ -25,10 +32,13 @@ class CategoriesList extends Component {
     const CategoryList = () => {
       return this.props.categoryArray
         .map(value => {
+          const bgColor = this.state.selectedCategory === value 
+            ? 'case-list-item-categories text-align-right lightgrey-col purple-bg' 
+            : 'case-list-item-categories text-align-right lightgrey-col pink-bg';
           return (<p 
             key={value} 
-            onClick={() => this.props.pickCategory(this.props.categories[value])}
-            className='case-list-item-categories text-align-right lightgrey-col'>
+            onClick={() => setSelectedCategory(value)}
+            className={bgColor}>
             {categorySwitch(value)}
           </p>);
         });

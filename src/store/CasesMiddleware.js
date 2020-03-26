@@ -66,8 +66,10 @@ const casesMiddleware = store => next => action => {
     
     for (const category of categoriesArray) {
       category_LOCAL[category] = setCasesByCategory(casesData, category);
+      category_LOCAL[category].category = category;
     }
     category_LOCAL[EVERYTHING] = casesData;
+    category_LOCAL[EVERYTHING].category = EVERYTHING;
     store.dispatch(setCategories(category_LOCAL));
   }
   next(action);

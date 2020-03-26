@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 import {selectCase, toggleMenu} from '../actions';
 
 class CasesList extends Component {
-
-
   setButtonDispatch(caseItem){
     this.props.selectCase(caseItem);
     this.props.toggleMenu(!this.props.toggle);
@@ -14,18 +12,22 @@ class CasesList extends Component {
 
   clientPick (clientID) {
     let pickClient = '';
-    for (const value of  this.props.clientsData) {
-      const clientConvert = parseInt(clientID);
-      if (value.id === clientConvert) {
-        pickClient = value.title;
+    if (isNaN(clientID) ){
+      pickClient = clientID;
+    } else {
+      for (const value of  this.props.clientsData) {
+        const clientConvert = parseInt(clientID);
+        if (value.id === clientConvert) {
+          pickClient = value.title;
+        }
       }
     }
-
     return <p className='case-list-item-client lightgrey-col' >{pickClient}</p>;
   }
 
-  createCasesList(){     
-    return this.props.casesData
+  createCasesList(){ 
+    let cases = this.props.selectedCategory ? this.props.selectedCategory : this.props.casesData;
+    return cases
       .sort((a, b) => a.headline.localeCompare(b.headline))
       .map((caseItem) => {
         return (
@@ -55,7 +57,6 @@ class CasesList extends Component {
 }
 
 function mapStateToProps(state) {
-  console.log("state.selectedCategory", state.selectedCategory)
   return{
     casesData: state.casesData,
     clientsData: state.clientsData,

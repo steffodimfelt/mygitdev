@@ -23,7 +23,6 @@ export const setCategories = object => ({
 });
 
 export const pickCategory = object => {
-  console.log("ACTION", object)
   return {
     type: 'SELECTED_CATEGORY',
     payload: object,

@@ -18,6 +18,6 @@ const allReducers = combineReducers({
   setCaseDetails,
   caseReducers,
   clientsData,
-  selectedCategory
+  selectedCategory,
 });
 export default allReducers;

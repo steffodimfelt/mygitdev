@@ -3,8 +3,10 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import { FILM, PRINT, WEB, PHOTO, THREE_D, OTHER, EVENT, MOBILE, EVERYTHING } from '../CategoriesConstants.js';
+import {pickCategory} from '../actions';
 
 class CategoriesList extends Component {
+  
   render() {
     const categorySwitch = title => {
       switch(title) {
@@ -21,10 +23,14 @@ class CategoriesList extends Component {
     };
 
     const CategoryList = () => {
-      console.log(this.props.categoryArray)
       return this.props.categoryArray
         .map(value => {
-          return (<p key={value} className='case-list-item-categories text-align-right lightgrey-col'>{categorySwitch(value)}</p>)
+          return (<p 
+            key={value} 
+            onClick={() => this.props.pickCategory(this.props.categories[value])}
+            className='case-list-item-categories text-align-right lightgrey-col'>
+            {categorySwitch(value)}
+          </p>);
         });
     };
 
@@ -37,19 +43,24 @@ class CategoriesList extends Component {
 }
 
 function mapStateToProps(state) {
-  console.log("state.caseReducers", state.caseReducers);
+  console.log("state", state);
   return{
     categories: state.caseReducers.categories,
     categoryArray: state.caseReducers.categoryArray,
+    selectedCategory: state.selectedCategory,
+    casesData: state.casesData,
   };
 }
 function matchDispatchToProps(dispatch) {
-  return bindActionCreators({}, dispatch);
+  return bindActionCreators({pickCategory}, dispatch);
 }
   
 CategoriesList.propTypes = {
   categories: PropTypes.object.isRequired,
   categoryArray: PropTypes.array.isRequired,
+  pickCategory: PropTypes.func.isRequired,
+  selectedCategory: PropTypes.array,
+  casesData: PropTypes.array.isRequired,
 };
   
 export default connect(mapStateToProps, matchDispatchToProps)(CategoriesList);

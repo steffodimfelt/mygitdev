@@ -7,6 +7,7 @@ import tasksData from './TasksData';
 import setCaseDetails from './SetCaseDetails';
 import caseReducers from './CaseReducers';
 import clientsData from './ClientData';
+import selectedCategory from './SelectedCategory';
 
 const allReducers = combineReducers({
   casesData,
@@ -16,6 +17,7 @@ const allReducers = combineReducers({
   tasksData,
   setCaseDetails,
   caseReducers,
-  clientsData
+  clientsData,
+  selectedCategory
 });
 export default allReducers;

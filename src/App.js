@@ -64,7 +64,7 @@ class App extends Component {
     return (
       <div  className='col'>       
         {!this.props.setCase ? <FirstPage /> : <CasesDetail />}
-        {this.props.toggle ? <CaseMenu categories={this.props.categories} /> : null }
+        {this.props.toggle ? <CaseMenu  /> : null }
         {this.props.toggle ? <MenuOff /> : <MenuOn /> }      
       </div>
     );
@@ -73,7 +73,6 @@ class App extends Component {
 App.propTypes = {
   toggleMenu: PropTypes.func.isRequired,
   mapCategories: PropTypes.func.isRequired,
-  categories: PropTypes.object.isRequired,
   toggle: PropTypes.bool.isRequired,
   setCase: PropTypes.object,
 };
@@ -81,7 +80,6 @@ App.propTypes = {
 function mapStateToProps(state) {
   return{
     toggle: state.caseReducers.toggleMenu,
-    categories: state.caseReducers.categories,
     setCase: state.setCaseDetails,
   };
 }

@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import {selectCase, toggleMenu} from '../actions';
 
 class CasesList extends Component {
+
+
   setButtonDispatch(caseItem){
     this.props.selectCase(caseItem);
     this.props.toggleMenu(!this.props.toggle);
@@ -53,10 +55,12 @@ class CasesList extends Component {
 }
 
 function mapStateToProps(state) {
+  console.log("state.selectedCategory", state.selectedCategory)
   return{
     casesData: state.casesData,
     clientsData: state.clientsData,
     toggle: state.caseReducers.toggleMenu,
+    selectedCategory: state.selectedCategory
   };
 }
 function matchDispatchToProps(dispatch) {
@@ -68,7 +72,8 @@ CasesList.propTypes = {
   clientsData: PropTypes.array.isRequired,
   selectCase: PropTypes.func.isRequired,
   toggleMenu: PropTypes.func.isRequired,
-  toggle: PropTypes.bool.isRequired
+  toggle: PropTypes.bool.isRequired,
+  selectedCategory: PropTypes.array,
 };
 
 export default connect(mapStateToProps, matchDispatchToProps)(CasesList);

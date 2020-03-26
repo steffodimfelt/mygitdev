@@ -222,32 +222,37 @@ h2, h3, h4, h5{
   font-weight: 700;
 }
 
-p.case-list-item,
-p.case-list-item-categories {
-  margin: 0; 
-  padding: 0;  
-  font-size: 1.5rem; 
-  line-height: 1.5rem; 
+.case-list-item,
+.case-list-item-categories {
+  margin: 0;
   cursor: pointer;
-}
-p.case-list-item-client {
-  margin: 0; 
-  padding: 0; 
-  margin-bottom: 0.75rem; 
-  font-size: 1rem; 
-  line-height: 2rem; 
-  cursor: pointer;
-  margin-top: -0.5rem;
   border-bottom: #F5F3EE solid 1px;
 }
 
-p.case-list-item-categories {
-  border-bottom: #F5F3EE solid 1px;
-  margin-bottom: 0.75rem;
-  padding-bottom: 0.75rem;
+.case-list-item {
+  padding: 0.75rem 0 0.75rem 0.75rem;
+}
+
+.case-list-item-client {
+  font-size: 1rem; 
+  line-height: 1rem; 
+  margin: 0;
+  padding:0.5rem 0 0 0;
+}
+
+.case-list-item-categories{
+  padding: 0.75rem 0.75rem 0.75rem 0;
+}
+
+.case-list-item-categories p,
+.case-list-item #case-list-item-title{
+  margin: 0;
+  font-size: 1.5rem; 
+  line-height: 1.5rem; 
 }
 
 .text-align-right{text-align: right;}
+.text-align-left{text-align: left;}
 
 
 /* Borders */

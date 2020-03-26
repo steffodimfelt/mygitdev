@@ -36,8 +36,8 @@ class CasesList extends Component {
             href="#case"
             key={caseItem.id}
           >
-            <div onClick={() => this.setButtonDispatch(caseItem)}>
-              <p className='case-list-item lightgrey-col'>
+            <div className='case-list-item text-align-left' onClick={() => this.setButtonDispatch(caseItem)}>
+              <p id='case-list-item-title' className='lightgrey-col '>
                 {caseItem.headline} 
               </p>
               {this.clientPick (caseItem.client)}

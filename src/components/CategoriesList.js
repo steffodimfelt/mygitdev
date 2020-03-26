@@ -35,12 +35,17 @@ class CategoriesList extends Component {
           const bgColor = this.state.selectedCategory === value 
             ? 'case-list-item-categories text-align-right lightgrey-col purple-bg' 
             : 'case-list-item-categories text-align-right lightgrey-col pink-bg';
-          return (<p 
-            key={value} 
-            onClick={() => setSelectedCategory(value)}
-            className={bgColor}>
-            {categorySwitch(value)}
-          </p>);
+          return (
+            <div
+              key={value} 
+              onClick={() => setSelectedCategory(value)}
+              className={bgColor}
+            >
+              <p>
+                {categorySwitch(value)}
+              </p>
+            </div>
+          );
         });
     };
 

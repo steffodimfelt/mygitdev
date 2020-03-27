@@ -6,12 +6,9 @@ import CaseStats from './CaseStats';
 class CasesDetail extends Component {
   constructor(props){
     super(props);
-    this.state = {toggleImg: false, caseImage: ''};
+    this.state = { caseImage: ''};
   }
   
-
-
-
   render() {
     const {setCase} = this.props;
     if (setCase == null){return null;}
@@ -22,15 +19,16 @@ class CasesDetail extends Component {
 
     const setToggleImg = caseImage => {
       this.props.doubleToggleFunction(true);
-      this.setState(prevState => ({toggleImg: !prevState.toggleImg, caseImage}));
+      this.setState({toggleImg: true, caseImage});
+    };
+    const closeToggle = () => {
+      this.setState({toggleImg: false});
     };
 
     const FullImage = () => {
-      console.log("doubleToggle", this.props.doubleToggle);
-      // console.log('toggleImg', this.state.toggleImg)
       if (!this.props.doubleToggle){return null;}
       return (
-        <div className='pointer full-screen black-alpha-trans-bg' style={{display: 'flex', position:'fixed', top: 0}} onClick={() => setToggleImg()}>
+        <div className='pointer full-screen black-alpha-trans-bg' style={{display: 'flex', position:'fixed', top: 0}} onClick={() => closeToggle()}>
           <img 
             className='img-max center-center'
             alt={this.state.caseImage} 
@@ -127,7 +125,6 @@ class CasesDetail extends Component {
   }
 }
 function mapStateToProps(state) {
-  console.log('state.caseReducers.toggleMenu', state.caseReducers.toggleMenu)
   return {
     setCase: state.setCaseDetails,
     toggle: state.caseReducers.toggleMenu,

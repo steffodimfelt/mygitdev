@@ -57,10 +57,13 @@ class CasesDetail extends Component {
 
       );
     };
+
   
     return (
       <div id='case' className='lightgrey-bg' style={{paddingBottom: 48}} >
-        <div onClick={() => setToggleImg(imgThumb.img1)} className='pointer' style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img1 + ')', width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
+        <div onClick={() => setToggleImg(imgThumb.img1)} className='pointer' style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img1 + ')', width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} >
+          <Zoom onClick={() => setToggleImg(imgThumb.img1)} />
+        </div>
         <div className='col'>
           {/* RUBRIK */}
           <div className='row'>

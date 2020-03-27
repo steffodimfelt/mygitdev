@@ -88,7 +88,7 @@ class CasesDetail extends Component {
               <div 
                 onClick={() => setToggleImg(imgThumb.img2)}
                 className='cover-image pointer' 
-                style={{ height: '100%', backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img2 + ')' }} >
+                style={{  backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img2 + ')' }} >
                 <Zoom onClick={() => this.setToggleImg(imgThumb.img2)} />
               </div>
               <div 

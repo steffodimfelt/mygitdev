@@ -5,7 +5,8 @@ import CaseStats from './CaseStats';
 
 class CasesDetail extends Component {
 
-  state = {toggleImg: false};
+  state = {toggleImg: false, caseImage: ''};
+  
 
   render() {
     const {setCase} = this.props;
@@ -15,14 +16,45 @@ class CasesDetail extends Component {
       colorSpace, tools, tasks, 
       employer, client, textShort} = setCase;
 
-    const setToggleImg = () => {
-      console.log("SET")
-      this.setState(prevState => ({toggleImg: !prevState.toggleImg}));
+    const setToggleImg = caseImage => {
+      this.setState(prevState => ({toggleImg: !prevState.toggleImg, caseImage}));
+    };
+
+    const FullImage = () => {
+      return (
+        <div className='pointer full-screen black-alpha-trans-bg' style={{display: 'flex', position:'fixed', top: 0}} onClick={() => setToggleImg()}>
+          <img 
+            className='img-max center-center'
+            alt={this.state.caseImage} 
+            src={'https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + this.state.caseImage} />
+        
+          <div className='row' style={{justifyContent: 'flex-end', height: '100%', paddingRight: '3rem'}}>
+            <div id='menu' 
+              className='menu-style-close-img m-s24 pointer purple-bg shadow-1'
+            >
+              <img alt='Close button' src={require('../img/icons/close.svg')} style={{width: '2rem'}} />
+            </div>
+          </div>
+        </div>
+      );
+    };
+
+    const Zoom = () => {
+      return (
+        <div className='row' style={{justifyContent: 'flex-end', height: '100%', paddingRight: '1rem', paddingBottom: '1rem'}}>
+          <div  
+            className='zoom-button-style pointer purple-bg shadow-1 ' style={{alignSelf: 'flex-end'}}
+          >
+            <img alt='Close button' src={require('../img/icons/zoom.svg')} style={{width: '1.7rem'}} />
+          </div>
+        </div>
+
+      );
     };
   
     return (
       <div id='case' className='lightgrey-bg' style={{paddingBottom: 48}} >
-        <div  style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img1 + ')', width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
+        <div onClick={() => setToggleImg(imgThumb.img1)} className='pointer' style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img1 + ')', width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
         <div   className='col'>
           {/* RUBRIK */}
           <div className='row'>
@@ -46,13 +78,19 @@ class CasesDetail extends Component {
             <div className='f-s0 f-l2' />
             <div id='case-images' className='f-s1 f-l8' > 
               <div 
-                onClick={() => setToggleImg()}
-                className='cover-image' 
-                style={{ backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img2 + ')' }} ></div>
+                onClick={() => setToggleImg(imgThumb.img2)}
+                className='cover-image pointer' 
+                
+                style={{ height: '100%', backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img2 + ')' }} >
+                <Zoom onClick={() => this.setToggleImg(imgThumb.img2)} />
+              </div>
               <div 
-                onClick={() => setToggleImg()}
-                className='cover-image' 
-                style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img3 + ')' }} ></div>          
+                onClick={() => setToggleImg(imgThumb.img3)}
+                className='cover-image pointer' 
+                style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img3 + ')' }} >
+                <Zoom onClick={() => this.setToggleImg(imgThumb.img3)} />
+              </div>          
+
             </div>
             <div className='f-s0 f-l2' />
           </div>
@@ -77,19 +115,22 @@ class CasesDetail extends Component {
           </div>
           <div className='f-s0 f-m2 ' />
         </div>
-        {this.state.toggleImg ? <div onClick={() => setToggleImg()}>IMG</div> : null}
+        {this.state.toggleImg ? <FullImage /> : null}
       </div>
     );
   }
 }
 function mapStateToProps(state) {
+  console.log('state.caseReducers.toggleMenu', state.caseReducers.toggleMenu)
   return {
     setCase: state.setCaseDetails,
+     toggle: state.caseReducers.toggleMenu,
   };
 }
 CasesDetail.propTypes = {
   setCase: PropTypes.object,
   style: PropTypes.object,
+  toggle: PropTypes.bool.isRequired,
 };
 CasesDetail.defaultProps = {
   setCase: null

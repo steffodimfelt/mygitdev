@@ -136,6 +136,15 @@ body {
 .full-screen{height:100vh; width: 100vw}
 .full-hundred{height:100%; width: 100%}
 .img-full-screen{height:100vh; min-width: 100vw}
+.img-max{
+  max-height: 95vh; 
+  max-width: 95vw; 
+  margin: auto;   
+  top:0;
+  bottom:0;
+  left: 0;
+  right:0;
+}
 
 /* Positioning */
  .center-center {
@@ -177,6 +186,7 @@ body {
 .darkgrey-col{color: #707070;}
 .lightgrey-bg{background-color: #F5F3EE;}
 .lightgrey-col{color: #F5F3EE;}
+.black-alpha-trans-bg{background-color: rgba(0, 0, 0, 0.8);}
 
 /* Overflow */
 .overflow-auto{overflow: auto;}
@@ -340,6 +350,25 @@ h2, h3, h4, h5{
   height: 4rem; 
   border-radius: 50%; 
   position: fixed; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-style-close-img {
+  width: 4rem; 
+  height: 4rem; 
+  border-radius: 50%; 
+  position: fixed; 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoom-button-style {
+  width: 2.5rem; 
+  height: 2.5rem; 
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;

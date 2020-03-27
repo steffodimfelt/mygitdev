@@ -5,6 +5,8 @@ import CaseStats from './CaseStats';
 
 class CasesDetail extends Component {
 
+  state = {toggleImg: false};
+
   render() {
     const {setCase} = this.props;
     if (setCase == null){return null;}
@@ -12,6 +14,11 @@ class CasesDetail extends Component {
       imgThumb, headline, textLong, 
       colorSpace, tools, tasks, 
       employer, client, textShort} = setCase;
+
+    const setToggleImg = () => {
+      console.log("SET")
+      this.setState(prevState => ({toggleImg: !prevState.toggleImg}));
+    };
   
     return (
       <div id='case' className='lightgrey-bg' style={{paddingBottom: 48}} >
@@ -38,8 +45,14 @@ class CasesDetail extends Component {
           <div className='row' style={{paddingTop: 24}}>
             <div className='f-s0 f-l2' />
             <div id='case-images' className='f-s1 f-l8' > 
-              <div className='cover-image' style={{ backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img2 + ')' }} />
-              <div className='cover-image' style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img3 + ')' }} />          
+              <div 
+                onClick={() => setToggleImg()}
+                className='cover-image' 
+                style={{ backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img2 + ')' }} ></div>
+              <div 
+                onClick={() => setToggleImg()}
+                className='cover-image' 
+                style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img3 + ')' }} ></div>          
             </div>
             <div className='f-s0 f-l2' />
           </div>
@@ -64,6 +77,7 @@ class CasesDetail extends Component {
           </div>
           <div className='f-s0 f-m2 ' />
         </div>
+        {this.state.toggleImg ? <div onClick={() => setToggleImg()}>IMG</div> : null}
       </div>
     );
   }

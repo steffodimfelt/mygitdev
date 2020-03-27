@@ -49,7 +49,7 @@ export default () => {
       'imgCollage':'7',
       'imgCollageSetup':'12,9,10,11',
       'tools':'1,3,12,5,13,15',
-      'tasks':'28,1,2,5,11,12,16,22,23,24,34,4, 35,36',
+      'tasks':'28,1,2,5,11,12,16,22,23,24,34,4,35,36',
       'format':'MPEG-4H.264',
       'year':'2015',
       'link':null,

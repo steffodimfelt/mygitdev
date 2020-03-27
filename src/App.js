@@ -9,12 +9,17 @@ import {toggleMenu, mapCategories} from './actions';
 
 class App extends Component {
 
+  state = {doubleToggle: false}
+
   componentDidMount() {
     this.props.mapCategories();
   }
 
   render() {
-    const toggleMenu = () => { this.props.toggleMenu(!this.props.toggle);};
+    const toggleMenu = () => { this.props.toggleMenu(!this.props.toggle); doubleToggleFunction(false);};
+    const doubleToggleFunction = toggleState => {
+      this.setState({doubleToggle: toggleState});
+    };
     const MenuOn = () => {
       return (<div id='menu' 
         className='menu-style m-s24 pointer purple-bg shadow-1 '
@@ -63,7 +68,7 @@ class App extends Component {
     
     return (
       <div  className='col'>       
-        {!this.props.setCase ? <FirstPage /> : <CasesDetail />}
+        {!this.props.setCase ? <FirstPage /> : <CasesDetail doubleToggleFunction={doubleToggleFunction} doubleToggle={this.state.doubleToggle} />}
         {this.props.toggle ? <CaseMenu  /> : null }
         {this.props.toggle ? <MenuOff /> : <MenuOn /> }      
       </div>

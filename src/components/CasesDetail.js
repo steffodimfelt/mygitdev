@@ -4,9 +4,13 @@ import PropTypes from 'prop-types';
 import CaseStats from './CaseStats';
 
 class CasesDetail extends Component {
-
-  state = {toggleImg: false, caseImage: ''};
+  constructor(props){
+    super(props);
+    this.state = {toggleImg: false, caseImage: ''};
+  }
   
+
+
 
   render() {
     const {setCase} = this.props;
@@ -17,10 +21,14 @@ class CasesDetail extends Component {
       employer, client, textShort} = setCase;
 
     const setToggleImg = caseImage => {
+      this.props.doubleToggleFunction(true);
       this.setState(prevState => ({toggleImg: !prevState.toggleImg, caseImage}));
     };
 
     const FullImage = () => {
+      console.log("doubleToggle", this.props.doubleToggle);
+      // console.log('toggleImg', this.state.toggleImg)
+      if (!this.props.doubleToggle){return null;}
       return (
         <div className='pointer full-screen black-alpha-trans-bg' style={{display: 'flex', position:'fixed', top: 0}} onClick={() => setToggleImg()}>
           <img 
@@ -55,7 +63,7 @@ class CasesDetail extends Component {
     return (
       <div id='case' className='lightgrey-bg' style={{paddingBottom: 48}} >
         <div onClick={() => setToggleImg(imgThumb.img1)} className='pointer' style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img1 + ')', width: '100%', height: 450,  backgroundSize: 'cover', backgroundRepeat: 'no-repeat',  backgroundPosition: 'center center' }} />
-        <div   className='col'>
+        <div className='col'>
           {/* RUBRIK */}
           <div className='row'>
             <div className='f-l2' />
@@ -74,13 +82,12 @@ class CasesDetail extends Component {
             <div className='f-s0 f-l2' />
           </div>
           {/* BILDER */}
-          <div className='row' style={{paddingTop: 24}}>
+          <div className='row' style={{display: 'flex', paddingTop: 24}}>
             <div className='f-s0 f-l2' />
             <div id='case-images' className='f-s1 f-l8' > 
               <div 
                 onClick={() => setToggleImg(imgThumb.img2)}
                 className='cover-image pointer' 
-                
                 style={{ height: '100%', backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img2 + ')' }} >
                 <Zoom onClick={() => this.setToggleImg(imgThumb.img2)} />
               </div>
@@ -90,7 +97,6 @@ class CasesDetail extends Component {
                 style={{backgroundImage: 'url(https://raw.githubusercontent.com/steffodimfelt/steffodimfelt.github.io/master/static/img/cases/' + imgThumb.img3 + ')' }} >
                 <Zoom onClick={() => this.setToggleImg(imgThumb.img3)} />
               </div>          
-
             </div>
             <div className='f-s0 f-l2' />
           </div>
@@ -124,13 +130,15 @@ function mapStateToProps(state) {
   console.log('state.caseReducers.toggleMenu', state.caseReducers.toggleMenu)
   return {
     setCase: state.setCaseDetails,
-     toggle: state.caseReducers.toggleMenu,
+    toggle: state.caseReducers.toggleMenu,
   };
 }
 CasesDetail.propTypes = {
   setCase: PropTypes.object,
   style: PropTypes.object,
   toggle: PropTypes.bool.isRequired,
+  doubleToggleFunction: PropTypes.func,
+  doubleToggle: PropTypes.bool,
 };
 CasesDetail.defaultProps = {
   setCase: null

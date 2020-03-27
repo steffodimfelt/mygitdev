@@ -19,9 +19,13 @@ const pickIDFromNumberPushTitleToArray = (objectArray, numberArray) => {
 };
 
 const convertNumberToArray = (arrayIn, dataArrayIn) => {
-  const convertNumberArray = convertStringToNumberArray(arrayIn);
-  const newArrayOut = pickIDFromNumberPushTitleToArray(dataArrayIn, convertNumberArray);
-  return newArrayOut;
+  if (isNaN(arrayIn[0]) ){
+    return arrayIn;
+  } else {
+    const convertNumberArray = convertStringToNumberArray(arrayIn);
+    const newArrayOut = pickIDFromNumberPushTitleToArray(dataArrayIn, convertNumberArray);
+    return newArrayOut;
+  }
 };
 
 const setCasesByCategory = (arrayIn, categoryTitle) => {

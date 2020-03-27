@@ -7,11 +7,11 @@ import {pickCategory} from '../actions';
 
 class CategoriesList extends Component {
 
-  state = {selectedCategory: EVERYTHING}
+  state = {selectedCategoryState: this.props.selectedCategory === null ? EVERYTHING : this.props.selectedCategory.category}
 
   render() {
     const setSelectedCategory = (valueIn) => {
-      this.setState({selectedCategory: valueIn});
+      this.setState({selectedCategoryState: valueIn});
       this.props.pickCategory(this.props.categories[valueIn]);
     };
  
@@ -32,7 +32,7 @@ class CategoriesList extends Component {
     const CategoryList = () => {
       return this.props.categoryArray
         .map(value => {
-          const styles = this.state.selectedCategory === value 
+          const styles = this.state.selectedCategoryState === value 
             ? 'case-list-item-categories text-align-right lightgrey-col purple-bg' 
             : 'case-list-item-categories text-align-right lightgrey-col pink-bg';
           return (

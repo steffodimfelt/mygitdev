@@ -435,7 +435,7 @@ export default () => {
       'link':null,
       'linkName':null,
       'imgThumb': {
-        'img1': 'web/Swedbank/Internshop/2x1Swedbank-Shop03.jpg',
+        'img1': 'web/Swedbank/Internshop/2x2Swedbank-Shop01.jpg',
         'img2': 'web/Swedbank/Internshop/2x2Swedbank-Shop02.jpg',
         'img3': 'web/Swedbank/Internshop/2x2Swedbank-Shop01.jpg',
       },

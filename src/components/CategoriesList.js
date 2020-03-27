@@ -50,7 +50,7 @@ class CategoriesList extends Component {
     };
 
     return (
-      <div className='p-v-s24-s60 p-r-s24'>
+      <div className='p-v-s76-s60 p-r-s12'>
         <CategoryList />
       </div>
     );

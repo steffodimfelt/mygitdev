@@ -57,7 +57,7 @@ class CasesList extends Component {
     
   render(){   
     return(
-      <div className='p-v-s24-s60'>
+      <div className='p-v-s76-s60'>
         {this.createCasesList()}
       </div>
     );

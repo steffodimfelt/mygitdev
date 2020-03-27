@@ -105,8 +105,10 @@ body {
 .p-v-s16 {padding-top: 1rem; padding-bottom: 1rem;}
 .p-v-s24 {padding-top: 1.5rem; padding-bottom: 1.5rem;}
 .p-v-s24-s60 {padding-top: 1.5rem; padding-bottom: 4.5rem;}
+.p-v-s76-s60 {padding-top: 6.1rem; padding-bottom: 4.5rem;}
 .p-t-s24 {padding-top: 2rem;}
 .p-r-s24 {padding-right: 2rem;}
+.p-r-s12 {padding-right: 0.75rem;}
 
 /* Margin */
 .m-s4 {margin: 0.25rem}
@@ -257,8 +259,8 @@ h2, h3, h4, h5{
 .case-list-item-categories p,
 .case-list-item #case-list-item-title{
   margin: 0;
-  font-size: 1.5rem; 
-  line-height: 1.5rem; 
+  font-size: 1.3rem; 
+  line-height: 1.3rem; 
 }
 
 .text-align-right{text-align: right;}

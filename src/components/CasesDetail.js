@@ -9,6 +9,8 @@ class CasesDetail extends Component {
     this.state = { caseImage: ''};
   }
   
+
+
   render() {
     const {setCase} = this.props;
     if (setCase == null){return null;}
@@ -57,7 +59,6 @@ class CasesDetail extends Component {
 
       );
     };
-
   
     return (
       <div id='case' className='lightgrey-bg' style={{paddingBottom: 48}} >

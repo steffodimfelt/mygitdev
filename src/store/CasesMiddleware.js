@@ -29,11 +29,9 @@ const convertNumberToArray = (arrayIn, dataArrayIn) => {
 };
 
 const setCasesByCategory = (arrayIn, categoryTitle) => {
-  let newArray = [];
-  for (const caseObject of arrayIn) {
-    caseObject.categories[categoryTitle] && (newArray.push(caseObject));
-  }
-  newArray.sort((a, b) => a.headline.localeCompare(b.headline));
+  let newArray = arrayIn
+    .filter(caseObject => caseObject.categories[categoryTitle])
+    .sort((a, b) => a.headline.localeCompare(b.headline));
   return newArray;
 };
 

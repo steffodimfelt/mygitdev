@@ -1,7 +1,7 @@
 {
   "name": "mygitdev",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "homepage": "http://steffodimfelt.github.io",
   "dependencies": {
     "react": "^16.6.3",

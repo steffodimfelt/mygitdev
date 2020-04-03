@@ -62,11 +62,14 @@ class CasesDetail extends Component {
 
     const MapSections = () => textLong.map((section, index) => {
       return (
-        <p 
-          key={index} 
-          style={{fontSize: '1.5rem', lineHeight: '2.2rem'}} 
-          className='darkgrey-col' 
-          dangerouslySetInnerHTML = {{ __html : section.paragraph  }} />
+        <div key={index}>
+          {section.subtitle ? (<h2 className='pink-col' style={{fontSize: '2rem', marginBottom: '-1rem'}} dangerouslySetInnerHTML = {{ __html : section.subtitle  }} />)  : null}
+          <p 
+            key={index} 
+            style={{fontSize: '1.5rem', lineHeight: '2.2rem'}} 
+            className='darkgrey-col' 
+            dangerouslySetInnerHTML = {{ __html : section.paragraph  }} />
+        </div>
       );
     });
   

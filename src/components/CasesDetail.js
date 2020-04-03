@@ -59,6 +59,16 @@ class CasesDetail extends Component {
 
       );
     };
+
+    const MapSections = () => textLong.map((section, index) => {
+      return (
+        <p 
+          key={index} 
+          style={{fontSize: '1.5rem', lineHeight: '2.2rem'}} 
+          className='darkgrey-col' 
+          dangerouslySetInnerHTML = {{ __html : section.paragraph  }} />
+      );
+    });
   
     return (
       <div id='case' className='lightgrey-bg' style={{paddingBottom: 48}} >
@@ -107,7 +117,7 @@ class CasesDetail extends Component {
             <div className='f-s0 f-m2 f-xl3' />
             <div className='f-s1 f-m8 f-xl6 ' id='case-text'>
               {/* TODO: Gör en mappad text istället */}
-              <p  style={{fontSize: '1.5rem', lineHeight: '2.2rem'}} className='darkgrey-col' dangerouslySetInnerHTML = {{ __html : textLong  }} />
+              <MapSections />
             </div>
             <div className='f-s0 f-m2 f-xl3' />
           </div>

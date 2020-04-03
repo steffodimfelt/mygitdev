@@ -26,6 +26,7 @@ class CategoriesList extends Component {
       case EVENT: return 'Event';
       case MOBILE: return 'Mobilt';
       case EVERYTHING: return 'Allting';
+      default: return 'Allting';
       }
     };
 

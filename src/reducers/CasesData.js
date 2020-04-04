@@ -1192,6 +1192,42 @@ export default () => {
         'other': true,
         'event': true,
       }
-    }
+    },
+    {
+      'id':'32',
+      'headline':'Rateau Croupier',
+      'textShort':'En träningsapp för croupier på kasinon',
+      'textLong': [
+        {'paragraph': '<span class=\'CapUp\'>Rateau Croupier är ett träningsverktyg för croupier på kasinon.<span> <span class="CapDown">Träningsdelen innehåller alla de olika moment som en croupier behöver öva för att bli bättre vid sin yrkesutövning.</span>'},
+        {'paragraph': 'Appen är från början ett examensarbete från min YH-utbildning på Newton i Stockholm.'},
+        {'paragraph': 'Appen lanserades under februari 2020 på Google Play.'},
+        {'paragraph': 'Mina uppgifter är dels UX/UI-delen och dels att utveckla logiken till samtliga träningsdelar i React Native.'},
+        {'paragraph': 'I den grafiska delen har jag jobbat mycket med 3D för att kunna införa ”äkta” kasinokänsla till Rateau Croupier.'},
+      ],
+      'caseInputDate':'2020-04-04',
+      'type':'Mobil applikation',
+      'colorSpace':'1',
+      'employer':'1',
+      'client': '1',
+      'tools':'26,27,1,2,3',
+      'tasks':'41,40,10,13,25',
+      'format':'React Native för Android-mobiler',
+      'year':'2020',
+      'link': [
+        {
+          'url': 'https://play.google.com/store/apps/details?id=com.rateaucroupier.rateaucroupier',
+          'icon': 'google',
+          'title': 'Rateau Croupier på Google Play'
+        }
+      ],
+      'imgThumb': {
+        'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
+        'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
+        'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
+      },
+      'categories': {
+        'mobile': true,
+      }
+    },
   ];
 };

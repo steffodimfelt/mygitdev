@@ -155,6 +155,14 @@ export default () => {
     {
       'id': 39,
       'title': 'User Interface',
+    },
+    {
+      'id': 40,
+      'title': 'User Experience',
+    },
+    {
+      'id': 41,
+      'title': 'Mobilutveckling',
     }
   ];
 };

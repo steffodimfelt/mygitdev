@@ -9,4 +9,4 @@ export const EVENT = 'event';
 export const MOBILE = 'mobile';
 export const EVERYTHING = 'everything';
 
-export default [EVERYTHING, THREE_D, EVENT, FILM, PHOTO, PRINT, WEB, OTHER ];
+export default [EVERYTHING, THREE_D, EVENT, FILM, MOBILE, PHOTO, PRINT, WEB, OTHER ];

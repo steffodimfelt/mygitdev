@@ -99,6 +99,14 @@ export default () => {
     {
       'id': 25,
       'title': 'Sluggo' ,
+    },
+    {
+      'id': 26,
+      'title': 'React Native' ,
+    },
+    {
+      'id': 27,
+      'title': 'Adobe XD' ,
     }
   ];
 };

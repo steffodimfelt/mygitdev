@@ -1210,14 +1210,14 @@ export default () => {
       'employer':'1',
       'client': '1',
       'tools':'26,27,1,2,3',
-      'tasks':'41,40,10,13,25',
-      'format':'React Native för Android-mobiler',
+      'tasks':'39,41,40,10,13,25',
+      'format':'React Native för Android',
       'year':'2020',
       'link': [
         {
           'url': 'https://play.google.com/store/apps/details?id=com.rateaucroupier.rateaucroupier',
           'icon': 'google',
-          'title': 'Rateau Croupier på Google Play'
+          'title': 'Google Play'
         }
       ],
       'imgThumb': {
@@ -1227,6 +1227,181 @@ export default () => {
       },
       'categories': {
         'mobile': true,
+      }
+    },
+    {
+      'id':'33',
+      'headline':'Challengize',
+      'textShort':'Social träningsapp',
+      'textLong': [
+        {'paragraph': '<span class=\'CapUp\'>För företaget Challengize<span> <span class="CapDown">gjorde jag en tre månaders praktikperiod. Här sattes jag i hetluften på på en gång som frontend-utvecklare.</span>'},
+        {'paragraph': 'Tillsammans med Art Director och den fasta utvecklaren fick jag möjlighet att sätta det grafiska uttrycket.'},
+        {'paragraph': 'Appen är byggd i React Native.'},
+        {'paragraph': 'En av mina uppgifter blev att sätt ett stilmall för hela appen.'},
+      ],
+      'caseInputDate':'2020-04-04',
+      'type':'Mobil applikation',
+      'colorSpace':'1',
+      'employer':'11',
+      'client': '18',
+      'tools':'26',
+      'tasks':'39,40,41',
+      'format':'React Native för både Android och iOS',
+      'year':'2018',
+      'link': [
+        {
+          'url': 'https://play.google.com/store/apps/details?id=com.challengize&gl=SE',
+          'icon': 'google',
+          'title': 'Google Play'
+        },
+        {
+          'url': 'https://apps.apple.com/se/app/challengize/id1376288953',
+          'icon': 'apple',
+          'title': 'App Store'
+        }
+      ],
+      'imgThumb': {
+        'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
+        'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
+        'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
+      },
+      'categories': {
+        'mobile': true,
+      }
+    },
+    {
+      'id':'34',
+      'headline':'Strike Trading Cards',
+      'textShort':'Gör dina egna digitala samlarkort',
+      'textLong': [
+        {'paragraph': '<span class=\'CapUp\'>Strike Trading Cards är en app<span> <span class="CapDown">där man själv kan göra sina egna samlarkort, som man sedan kan dela med sig till alla sina vänner.</span>'},
+        {'paragraph': 'För Levels satt jag i en tre månader som frontend-praktikant och färdigställde de sista bitarna för iOS-appen i Swift. '},
+      ],
+      'caseInputDate':'2020-04-04',
+      'type':'Mobil applikation',
+      'colorSpace':'1',
+      'employer':'12',
+      'client': '19',
+      'tools':'28',
+      'tasks':'41',
+      'format':'Swift för iOS',
+      'year':'2019',
+      'link': [
+        {
+          'url': 'https://apps.apple.com/se/app/strike-trading-cards/id1438521483',
+          'icon': 'apple',
+          'title': 'App Store'
+        }
+      ],
+      'imgThumb': {
+        'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
+        'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
+        'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
+      },
+      'categories': {
+        'mobile': true,
+      }
+    },
+    {
+      'id':'35',
+      'headline':'Red Line Oil',
+      'textShort':'En promotionapp för Red Line Oil',
+      'textLong': [
+        {'paragraph': '<span class=\'CapUp\'>Red Line Oil ville ha en enkel app<span> <span class="CapDown">för Android, där man bland annat snabbt kan hitta de viktigaste delarna i deras sortiment.</span>'},
+        {'paragraph': 'Appen byggde jag i React Native på tio timmar.'},
+      ],
+      'caseInputDate':'2020-04-04',
+      'type':'Mobil applikation',
+      'colorSpace':'1',
+      'employer':'13',
+      'client': '20',
+      'tools':'26',
+      'tasks':'39,41',
+      'format':'React Native för Android',
+      'year':'2019',
+      'link': [
+        {
+          'url': 'https://play.google.com/store/apps/details?id=com.redlineoil&gl=SE',
+          'icon': 'google',
+          'title': 'Google Play'
+        }
+      ],
+      'imgThumb': {
+        'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
+        'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
+        'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
+      },
+      'categories': {
+        'mobile': true,
+      }
+    },
+    {
+      'id':'36',
+      'headline':'Yellow',
+      'textShort':'En mockup på en fiktiv mobil applikation',
+      'textLong': [
+        {'paragraph': '<span class=\'CapUp\'>Yellow är ett grupparbete inom UI/UX-delen<span> <span class="CapDown">på Newtons YH-utbildning för apputveckling.</span>'},
+        {'paragraph': 'Arbetet gick ut på att ta fram ett koncept för ett fiktivt företag, i detta fallet en mäklarbyrå som heter Yellow.'},
+        {'paragraph': 'Grundförutsättningarna för projektet var att ta sig igenom alla delar i en UI/UX-process - från idé, koncept, storyboards, personor, flödesschema, wireframes och slutligen en mockup.'},
+        {'paragraph': 'Jag fick förtroendet att få göra den slutliga mockupen och dess formspråk.'},
+      ],
+      'caseInputDate':'2020-04-04',
+      'type':'Mockup',
+      'colorSpace':'1',
+      'employer':'1',
+      'client': '1',
+      'tools':'27',
+      'tasks':'39,40,28,29,10',
+      'format':'UI-mockup i Adobe XD',
+      'year':'2018',
+      'link': [
+        {
+          'url': 'https://xd.adobe.com/view/3e7e2117-037c-4990-9099-f0f5e14f6ab7/?hints=off',
+          'icon': 'xd',
+          'title': 'XD Mockup'
+        }
+      ],
+      'imgThumb': {
+        'img1': 'mobile/yellow/3x1-yellow-01.jpg',
+        'img2': 'mobile/yellow/2x2-yellow-01.jpg',
+        'img3': 'mobile/yellow/2x2-yellow-02.jpg'
+      },
+      'categories': {
+        'mobile': true,
+      }
+    },
+    {
+      'id':'37',
+      'headline':'Bookmaker',
+      'textShort':'En bokningsapplikation',
+      'textLong': [
+        {'paragraph': '<span class=\'CapUp\'>The Bookmaker är en egenutvecklad skript<span> <span class="CapDown">för kunna lägga bokningar och se vad som är bokat. Byggd i jQuery och ECMA 6. Fungerar dynamiskt och byggd med ”mobile first” i åtanke.</span>'},
+        {'paragraph': 'Vidareutvecklingen på den här är att koppla ihop med databas och att man ska kunna göra in- och utcheckning på samma dag. '},
+      ],
+      'caseInputDate':'2020-04-04',
+      'type':'Mockup',
+      'colorSpace':'1',
+      'employer':'1',
+      'client': '1',
+      'tools':'7,24,29',
+      'tasks':'39,40,41,28',
+      'format':'En bokningsapplikation',
+      'year':'2020',
+      'link': [
+        {
+          'url': 'https://github.com/steffodimfelt/bookmaker',
+          'icon': 'github',
+          'title': 'GitHub'
+        }
+      ],
+      'imgThumb': {
+        'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
+        'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
+        'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
+      },
+      'categories': {
+        'mobile': true,
+        'web': true,
       }
     },
   ];

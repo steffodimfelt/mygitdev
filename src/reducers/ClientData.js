@@ -68,5 +68,17 @@ export default () => {
       'id': 17,
       'title': 'TeliaSonera'
     },
+    {
+      'id': 18,
+      'title': 'Challengize'
+    },
+    {
+      'id': 19,
+      'title': 'Levels'
+    },
+    {
+      'id': 20,
+      'title': 'Red Line Oil'
+    }
   ];
 };

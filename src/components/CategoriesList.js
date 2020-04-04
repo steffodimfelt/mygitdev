@@ -24,7 +24,7 @@ class CategoriesList extends Component {
       case THREE_D: return '3D';
       case OTHER: return 'Övrigt';
       case EVENT: return 'Event';
-      case MOBILE: return 'Mobilt';
+      case MOBILE: return 'Mobil';
       case EVERYTHING: return 'Allting';
       default: return 'Allting';
       }

@@ -107,7 +107,15 @@ export default () => {
     {
       'id': 27,
       'title': 'Adobe XD' ,
-    }
+    },
+    {
+      'id': 28,
+      'title': 'Swift' ,
+    },
+    {
+      'id': 29,
+      'title': 'Bootstrap' ,
+    },
   ];
 };
 

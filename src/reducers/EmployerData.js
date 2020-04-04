@@ -39,6 +39,18 @@ export default () => {
     {
       'id': 10,
       'title': 'Stockholmsmässan'
+    },
+    {
+      'id': 11,
+      'title': 'Challengize'
+    },
+    {
+      'id': 12,
+      'title': 'Levels'
+    },
+    {
+      'id': 13,
+      'title': 'Grepp Kommunikation'
     }
-  ]
-}
+  ];
+};

@@ -1302,39 +1302,39 @@ export default () => {
         'mobile': true,
       }
     },
-    // {
-    //   'id':'35',
-    //   'headline':'Red Line Oil',
-    //   'textShort':'En promotionapp för Red Line Oil',
-    //   'textLong': [
-    //     {'paragraph': '<span class=\'CapUp\'>Red Line Oil ville ha en enkel app<span> <span class="CapDown">för Android, där man bland annat snabbt kan hitta de viktigaste delarna i deras sortiment.</span>'},
-    //     {'paragraph': 'Appen byggde jag i React Native på tio timmar.'},
-    //   ],
-    //   'caseInputDate':'2020-04-04',
-    //   'type':'Mobil applikation',
-    //   'colorSpace':'1',
-    //   'employer':'13',
-    //   'client': '20',
-    //   'tools':'26',
-    //   'tasks':'39,41',
-    //   'format':'React Native för Android',
-    //   'year':'2019',
-    //   'link': [
-    //     {
-    //       'url': 'https://play.google.com/store/apps/details?id=com.redlineoil&gl=SE',
-    //       'icon': 'google',
-    //       'title': 'Google Play'
-    //     }
-    //   ],
-    //   'imgThumb': {
-    //     'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
-    //     'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
-    //     'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
-    //   },
-    //   'categories': {
-    //     'mobile': true,
-    //   }
-    // },
+    {
+      'id':'35',
+      'headline':'Red Line Oil',
+      'textShort':'En promotionapp för Red Line Oil',
+      'textLong': [
+        {'paragraph': '<span class=\'CapUp\'>Red Line Oil ville ha en enkel app<span> <span class="CapDown">för Android, där man bland annat snabbt kan hitta de viktigaste delarna i deras sortiment.</span>'},
+        {'paragraph': 'Appen byggde jag i React Native på tio timmar.'},
+      ],
+      'caseInputDate':'2020-04-04',
+      'type':'Mobil applikation',
+      'colorSpace':'1',
+      'employer':'13',
+      'client': '20',
+      'tools':'26',
+      'tasks':'39,41',
+      'format':'React Native för Android',
+      'year':'2019',
+      'link': [
+        {
+          'url': 'https://play.google.com/store/apps/details?id=com.redlineoil&gl=SE',
+          'icon': 'google',
+          'title': 'Google Play'
+        }
+      ],
+      'imgThumb': {
+        'img1': 'mobile/redline/3x1-rlo.jpg',
+        'img2': 'mobile/redline/2x2-rlo-01.jpg',
+        'img3': 'mobile/redline/2x2-rlo-02.jpg'
+      },
+      'categories': {
+        'mobile': true,
+      }
+    },
     {
       'id':'36',
       'headline':'Yellow',

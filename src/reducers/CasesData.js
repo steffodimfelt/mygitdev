@@ -1221,9 +1221,9 @@ export default () => {
         }
       ],
       'imgThumb': {
-        'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
-        'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
-        'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
+        'img1': 'mobile/croupier/3x1-croupier-01.jpg',
+        'img2': 'mobile/croupier/2x2-croupier-02.jpg',
+        'img3': 'mobile/croupier/2x2-croupier-03.jpg'
       },
       'categories': {
         'mobile': true,
@@ -1261,9 +1261,9 @@ export default () => {
         }
       ],
       'imgThumb': {
-        'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
-        'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
-        'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
+        'img1': 'mobile/challengize/3x1-challengize.jpg',
+        'img2': 'mobile/challengize/2x2-challengize-02.jpg',
+        'img3': 'mobile/challengize/2x2-challengize-03.jpg'
       },
       'categories': {
         'mobile': true,
@@ -1294,47 +1294,47 @@ export default () => {
         }
       ],
       'imgThumb': {
-        'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
-        'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
-        'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
+        'img1': 'mobile/strike/3x1-strike.jpg',
+        'img2': 'mobile/strike/2x2-strike-02.jpg',
+        'img3': 'mobile/strike/2x2-strike-03.jpg'
       },
       'categories': {
         'mobile': true,
       }
     },
-    {
-      'id':'35',
-      'headline':'Red Line Oil',
-      'textShort':'En promotionapp för Red Line Oil',
-      'textLong': [
-        {'paragraph': '<span class=\'CapUp\'>Red Line Oil ville ha en enkel app<span> <span class="CapDown">för Android, där man bland annat snabbt kan hitta de viktigaste delarna i deras sortiment.</span>'},
-        {'paragraph': 'Appen byggde jag i React Native på tio timmar.'},
-      ],
-      'caseInputDate':'2020-04-04',
-      'type':'Mobil applikation',
-      'colorSpace':'1',
-      'employer':'13',
-      'client': '20',
-      'tools':'26',
-      'tasks':'39,41',
-      'format':'React Native för Android',
-      'year':'2019',
-      'link': [
-        {
-          'url': 'https://play.google.com/store/apps/details?id=com.redlineoil&gl=SE',
-          'icon': 'google',
-          'title': 'Google Play'
-        }
-      ],
-      'imgThumb': {
-        'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
-        'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
-        'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
-      },
-      'categories': {
-        'mobile': true,
-      }
-    },
+    // {
+    //   'id':'35',
+    //   'headline':'Red Line Oil',
+    //   'textShort':'En promotionapp för Red Line Oil',
+    //   'textLong': [
+    //     {'paragraph': '<span class=\'CapUp\'>Red Line Oil ville ha en enkel app<span> <span class="CapDown">för Android, där man bland annat snabbt kan hitta de viktigaste delarna i deras sortiment.</span>'},
+    //     {'paragraph': 'Appen byggde jag i React Native på tio timmar.'},
+    //   ],
+    //   'caseInputDate':'2020-04-04',
+    //   'type':'Mobil applikation',
+    //   'colorSpace':'1',
+    //   'employer':'13',
+    //   'client': '20',
+    //   'tools':'26',
+    //   'tasks':'39,41',
+    //   'format':'React Native för Android',
+    //   'year':'2019',
+    //   'link': [
+    //     {
+    //       'url': 'https://play.google.com/store/apps/details?id=com.redlineoil&gl=SE',
+    //       'icon': 'google',
+    //       'title': 'Google Play'
+    //     }
+    //   ],
+    //   'imgThumb': {
+    //     'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
+    //     'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
+    //     'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
+    //   },
+    //   'categories': {
+    //     'mobile': true,
+    //   }
+    // },
     {
       'id':'36',
       'headline':'Yellow',
@@ -1370,39 +1370,39 @@ export default () => {
         'mobile': true,
       }
     },
-    {
-      'id':'37',
-      'headline':'Bookmaker',
-      'textShort':'En bokningsapplikation',
-      'textLong': [
-        {'paragraph': '<span class=\'CapUp\'>The Bookmaker är en egenutvecklad skript<span> <span class="CapDown">för kunna lägga bokningar och se vad som är bokat. Byggd i jQuery och ECMA 6. Fungerar dynamiskt och byggd med ”mobile first” i åtanke.</span>'},
-        {'paragraph': 'Vidareutvecklingen på den här är att koppla ihop med databas och att man ska kunna göra in- och utcheckning på samma dag. '},
-      ],
-      'caseInputDate':'2020-04-04',
-      'type':'Mockup',
-      'colorSpace':'1',
-      'employer':'1',
-      'client': '1',
-      'tools':'7,24,29',
-      'tasks':'39,40,41,28',
-      'format':'En bokningsapplikation',
-      'year':'2020',
-      'link': [
-        {
-          'url': 'https://github.com/steffodimfelt/bookmaker',
-          'icon': 'github',
-          'title': 'GitHub'
-        }
-      ],
-      'imgThumb': {
-        'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
-        'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
-        'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
-      },
-      'categories': {
-        'mobile': true,
-        'web': true,
-      }
-    },
+    // {
+    //   'id':'37',
+    //   'headline':'Bookmaker',
+    //   'textShort':'En bokningsapplikation',
+    //   'textLong': [
+    //     {'paragraph': '<span class=\'CapUp\'>The Bookmaker är en egenutvecklad skript<span> <span class="CapDown">för kunna lägga bokningar och se vad som är bokat. Byggd i jQuery och ECMA 6. Fungerar dynamiskt och byggd med ”mobile first” i åtanke.</span>'},
+    //     {'paragraph': 'Vidareutvecklingen på den här är att koppla ihop med databas och att man ska kunna göra in- och utcheckning på samma dag. '},
+    //   ],
+    //   'caseInputDate':'2020-04-04',
+    //   'type':'Mockup',
+    //   'colorSpace':'1',
+    //   'employer':'1',
+    //   'client': '1',
+    //   'tools':'7,24,29',
+    //   'tasks':'39,40,41,28',
+    //   'format':'En bokningsapplikation',
+    //   'year':'2020',
+    //   'link': [
+    //     {
+    //       'url': 'https://github.com/steffodimfelt/bookmaker',
+    //       'icon': 'github',
+    //       'title': 'GitHub'
+    //     }
+    //   ],
+    //   'imgThumb': {
+    //     'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
+    //     'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
+    //     'img3': '3d/Stockholmsmassan/BakChoklad/BoC-03.jpg'
+    //   },
+    //   'categories': {
+    //     'mobile': true,
+    //     'web': true,
+    //   }
+    // },
   ];
 };

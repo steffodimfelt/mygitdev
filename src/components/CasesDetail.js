@@ -94,8 +94,6 @@ class CasesDetail extends Component {
             <div  className='f-s0 f-l2' />
             <div  className='f-s1 f-l8 border-s1-vertical' style={{textAlign: 'center'}}>
               <p  style={{fontSize: '2rem', lineHeight: '2.9rem', display: 'inline-block'}} className='darkgrey-col' >{textShort}</p>
-              
-              <LinkIcons link={link} />
             </div>
             <div className='f-s0 f-l2' />
           </div>
@@ -118,11 +116,20 @@ class CasesDetail extends Component {
             </div>
             <div className='f-s0 f-l2' />
           </div>
+          {/* EXTERNA LÄNKAR */}
+          {link ? 
+            <div id='case-stats-outer-container' className='row' style={{paddingTop: 48}}>
+              <div  className='f-s0 f-l2' />
+              <div  className='f-s1 f-l8 border-s1-vertical' style={{textAlign: 'center'}}>             
+                <LinkIcons link={link} />
+              </div>
+              <div className='f-s0 f-l2' />
+            </div>
+            : null}
           {/* BRÖDTEXT */}
           <div className='row' style={{paddingTop: 24}}>
             <div className='f-s0 f-m2 f-xl3' />
             <div className='f-s1 f-m8 f-xl6 ' id='case-text'>
-              {/* TODO: Gör en mappad text istället */}
               <MapSections />
             </div>
             <div className='f-s0 f-m2 f-xl3' />

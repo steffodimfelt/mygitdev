@@ -949,6 +949,23 @@ export default () => {
       'tasks':'29,28,1,2,3,4,10,11,12,13,14,16,20,21,22,23,24',
       'format':'MPEG-4H.264',
       'year':'2012',
+      'link': [
+        {
+          'title': 'Se filmen Skandia Bricka',
+          'icon': 'vimeo',
+          'url': 'https://vimeo.com/130078551'
+        },
+        {
+          'title': 'Se filmen Scandic Smörkniv',
+          'icon': 'vimeo',
+          'url': 'https://vimeo.com/130078425'
+        },
+        {
+          'title': 'Se filmen Scandic Necessär',
+          'icon': 'vimeo',
+          'url': 'https://vimeo.com/130078427'
+        },
+      ],
       'imgThumb': {
         'img1': 'film/StadiumPromotion/Casefilmer/2x1-SP-Case-03.jpg',
         'img2': 'film/StadiumPromotion/Casefilmer/2x1-SP-Case-04.jpg',

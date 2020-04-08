@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import CaseStats from './CaseStats';
+import LinkIcons from './LinkIcons';
 
 class CasesDetail extends Component {
   constructor(props){
@@ -16,7 +17,7 @@ class CasesDetail extends Component {
     if (setCase == null){return null;}
     const {
       imgThumb, headline, textLong, 
-      colorSpace, tools, tasks, 
+      colorSpace, tools, tasks, link,
       employer, client, textShort} = setCase;
 
     const setToggleImg = caseImage => {
@@ -93,6 +94,8 @@ class CasesDetail extends Component {
             <div  className='f-s0 f-l2' />
             <div  className='f-s1 f-l8 border-s1-vertical' style={{textAlign: 'center'}}>
               <p  style={{fontSize: '2rem', lineHeight: '2.9rem', display: 'inline-block'}} className='darkgrey-col' >{textShort}</p>
+              
+              <LinkIcons link={link} />
             </div>
             <div className='f-s0 f-l2' />
           </div>

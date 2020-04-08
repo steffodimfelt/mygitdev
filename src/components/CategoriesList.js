@@ -17,7 +17,7 @@ class CategoriesList extends Component {
  
     const categorySwitch = title => {
       switch(title) {
-      case FILM: return 'Film';
+      case FILM: return 'Rörligt';
       case PRINT: return 'Print';
       case WEB: return 'Webb';
       case PHOTO: return 'Foto';

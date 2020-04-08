@@ -27,8 +27,13 @@ export default () => {
       'tasks':'1,2,6,24,37',
       'format':'RED',
       'year':'2010',
-      'link':'http:241production.com',
-      'linkName':'241production',
+      'link': [
+        {
+          'title': 'Se filmen Narcissus',
+          'icon': 'youtube',
+          'url': 'https://youtu.be/LqUI8iE8BsE'
+        }
+      ],
       'imgThumb':{
         'img1': 'film/narcissus/2x1_narcissus_01.jpg',
         'img2': 'film/narcissus/1x1_narcissus_01.jpg',
@@ -66,8 +71,13 @@ export default () => {
       'tasks':'28,1,2,5,11,12,16,22,23,24,34,4,35,36',
       'format':'MPEG-4H.264',
       'year':'2015',
-      'link':null,
-      'linkName':null,
+      'link': [
+        {
+          'title': 'Se filmen Värderingsmannen',
+          'icon': 'vimeo',
+          'url': 'https://vimeo.com/148868806'
+        }
+      ],
       'imgThumb': {
         'img1': 'film/varderingsmannen/2x1-varderingsmannen-01.jpg',
         'img2': 'film/varderingsmannen/2x2-varderingsmannen-03.jpg',
@@ -104,8 +114,13 @@ export default () => {
       'tasks':'1',
       'format':'RED',
       'year':'2010',
-      'link':null,
-      'linkName':null,
+      'link': [
+        {
+          'title': 'Se filmen Amalia',
+          'icon': 'vimeo',
+          'url': 'http://vimeo.com/m/60997271'
+        }
+      ],
       'imgThumb':{
         'img1': 'film/amalia/3x1_amalia02.jpg',
         'img2': 'film/amalia/2x1_amalia01.jpg',
@@ -143,8 +158,6 @@ export default () => {
       'tasks':'9,12,16,17,18,19,22,23',
       'format':'-',
       'year':'2014',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/Friskis/KatalogV15/2x1FriskisV15_4.jpg',
         'img2': 'print/Friskis/KatalogV15/2X2FriskisV15_1.jpg',
@@ -178,8 +191,6 @@ export default () => {
       'tasks':'9,12,16,17,18,19,23',
       'format':'210mm x 250mm<BR>40 sidor',
       'year':'2007',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/Ahlsell/Klader-katalog/2x1-Ahlsell01.jpg',
         'img2': 'print/Ahlsell/Klader-katalog/2x2-Ahlsell02.jpg',
@@ -213,8 +224,6 @@ export default () => {
       'tasks':'28,10,26,27',
       'format':'-',
       'year':'2010',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'other/Elektro/2x1-Elektro02.jpg',
         'img2': 'other/Elektro/2x1-Elektro03.jpg',
@@ -274,8 +283,6 @@ export default () => {
       'tasks':'9,12,16,17,18,19,23',
       'format':'210mm x 210 mm<BR>36 sidor',
       'year':'2007',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/SvenskaSpel/katalog/2x1-SvS-Katalog01.jpg',
         'img2': 'print/SvenskaSpel/katalog/2x2-SvS-Katalog02.jpg',
@@ -339,8 +346,6 @@ export default () => {
       'tasks':'7,8,10,16,38,39',
       'format':'HTML<BR>Flash',
       'year':'1999',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'web/Metallica/2x1-Metallica01.jpg',
         'img2': 'web/Metallica/2x2-Metallica02.jpg',
@@ -377,8 +382,6 @@ export default () => {
       'tasks':'12,16,17,19',
       'format':'-',
       'year':'2008',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'foto/Skandia/lansering/2x1-Skandia-lansering03.jpg',
         'img2': 'foto/Skandia/lansering/2x2-Skandia-Lansering01.jpg',
@@ -414,8 +417,6 @@ export default () => {
       'tasks':'13,12,15,20,16',
       'format':'594mmx840mm',
       'year':'2015',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/Friskis/AffischV16/2x1-Friskis-Affisch-06.jpg',
         'img2': 'print/Friskis/AffischV16/2x2-Friskis-Affisch-01.jpg',
@@ -452,8 +453,6 @@ export default () => {
       'tasks':'9,10,16',
       'format':'-',
       'year':'2004',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/TeliaSonera/general_meeting/2x2-TeliaSonera-Hex-02.jpg',
         'img2': 'print/TeliaSonera/general_meeting/1x1-TeliaSonera-Hex-03.jpg',
@@ -490,8 +489,6 @@ export default () => {
       'tasks':'13,4,12,15,16,19,20,23',
       'format':'-',
       'year':'2011',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': '3d/Scandic/vip/2x1-Scandic-Necessar-04.jpg',
         'img2': '3d/Scandic/vip/1x1-Scandic-Necessar-01.jpg',
@@ -526,8 +523,6 @@ export default () => {
       'tasks':'7,8,29',
       'format':'Responsiv webb',
       'year':'2015',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'web/Swedbank/Internshop/2x2Swedbank-Shop01.jpg',
         'img2': 'web/Swedbank/Internshop/2x2Swedbank-Shop02.jpg',
@@ -562,8 +557,6 @@ export default () => {
       'tasks':'9,10,12,16,27',
       'format':'Förpackning<BR>Whiskeyglas',
       'year':'2005',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/JW/whiskey/2x1-JW-01.jpg',
         'img2': 'print/JW/whiskey/2x1-JW-Whiskey-03.jpg',
@@ -599,8 +592,6 @@ export default () => {
       'tasks':'9,10,26',
       'format':'Illustrationer',
       'year':'2014',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'other/Telia/illustrationer/2x2-Telia-Mouse-01.jpg',
         'img2': 'other/Telia/illustrationer/2x1-Telia-Sport-02.jpg',
@@ -636,8 +627,6 @@ export default () => {
       'tasks':'9,25',
       'format':'Butiskpresentation<BR>Magneter<BR>Koppar',
       'year':'2006',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/Lofbergs/Butik/2x1-Lofbergs-Camp-03.jpg',
         'img2': 'print/Lofbergs/Butik/2x2-Lofbergs-campaign-01.jpg',
@@ -675,8 +664,13 @@ export default () => {
       'tasks':'4,11,12,13,14,15,16,21,23,24,25',
       'format':'Instruktionfilm<BR>1920px x 1080px',
       'year':'2014',
-      'link':'https//:vimeo.com128578317',
-      'linkName':'Friskis&Svettis, Instruktionsfilm 2014',
+      'link': [
+        {
+          'title': 'Se instruktionsfilmen på Vimeo',
+          'icon': 'vimeo',
+          'url': 'https//:vimeo.com128578317'
+        }
+      ],
       'imgThumb': {
         'img1': 'film/Friskis/Instruktionsfilm/2x1-Friskis-Instr-04.jpg',
         'img2': 'film/Friskis/Instruktionsfilm/2x1-Friskis-Instr-02.jpg',
@@ -713,8 +707,6 @@ export default () => {
       'tasks':'9,12,16,17,23',
       'format':'Hangtags<BR>Klisteretiketter',
       'year':'2008',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/Scandic/Hangtags/2x1-Scandic-Hangtags02.jpg',
         'img2': 'print/Scandic/Hangtags/2x2-Scandic-Hangtags01.jpg',
@@ -750,8 +742,6 @@ export default () => {
       'tasks':'28,9,10,26,27',
       'format':'Produktmönster',
       'year':'2007',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/Ahlsell/Rutor/2x1-AHL-rutor-06.jpg',
         'img2': 'print/Ahlsell/Rutor/2x2-AHL-rutor-03.jpg',
@@ -787,8 +777,6 @@ export default () => {
       'tasks':'9,10,16,25',
       'format':'Höjd: 232mm<BR>Bredd: 265mm<BR>Djup: 127mm',
       'year':'2007',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/Ahlsell/Kartong/2x1-AHL-Kartong-03.jpg',
         'img2': 'print/Ahlsell/Kartong/2x2-AHL-kartong-02.jpg',
@@ -847,8 +835,6 @@ export default () => {
       'tasks':'9,10,16,25',
       'format':'Höjd: 330mm<BR>Bredd: 250mm<BR>Djup: 100mm',
       'year':'2008',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/Skandia/Sommarpres/2x1-Skandia-Summer-01.jpg',
         'img2': 'print/Skandia/Sommarpres/2x2-Skandia-Summer-03.jpg',
@@ -888,8 +874,6 @@ export default () => {
       'tasks':'7,8,10',
       'format':'Webbsida',
       'year':'2012',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'web/DoIt/2x1-DoIt-03.jpg',
         'img2': 'web/DoIt/2x1-DoIt-02.jpg',
@@ -926,8 +910,6 @@ export default () => {
       'tasks':'7',
       'format':'Webbsida',
       'year':'2012',
-      'link':'',
-      'linkName':'',
       'imgThumb': {
         'img1': 'web/StadiumPromotion/Webb/2x2-SP-Webb-03.jpg',
         'img2': 'web/StadiumPromotion/Webb/2x1-SP-Webb-01.jpg',
@@ -967,8 +949,6 @@ export default () => {
       'tasks':'29,28,1,2,3,4,10,11,12,13,14,16,20,21,22,23,24',
       'format':'MPEG-4H.264',
       'year':'2012',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'film/StadiumPromotion/Casefilmer/2x1-SP-Case-03.jpg',
         'img2': 'film/StadiumPromotion/Casefilmer/2x1-SP-Case-04.jpg',
@@ -1003,8 +983,6 @@ export default () => {
       'tasks':'9,27',
       'format':'Bredd: 68mm<BR>Höjd: 95mm',
       'year':'2008',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'print/SvenskaSpel/magnet/2x1-SvS-Magnet02.jpg',
         'img2': 'print/SvenskaSpel/magnet/2x2-SvS-Magnet01.jpg',
@@ -1041,8 +1019,13 @@ export default () => {
       'tasks':'28,7,8',
       'format':'Webbsida',
       'year':'2015',
-      'link':'http//:pontusolgrim.se',
-      'linkName':'pontusolgrim.se',
+      'link': [
+        {
+          'title': 'Besök sidan pontusolgrim.se',
+          'icon': 'web',
+          'url': 'http//:pontusolgrim.se'
+        }
+      ],
       'imgThumb': {
         'img1': 'web/PontusOlgrim/2015/2X1-Pontus-Portfolio-2015-03.jpg',
         'img2': 'web/PontusOlgrim/2015/2x2-Pontus-Portfolio-2015-01.jpg',
@@ -1079,8 +1062,6 @@ export default () => {
       'tasks':'1,2',
       'format':'Pjäser',
       'year':'2008',
-      'link':null,
-      'linkName':null,
       'imgThumb': {
         'img1': 'other/OppetSpar-2008/2x1-Par-Nar-2008-02.jpg',
         'img2': 'other/OppetSpar-2008/2x1-Par-Nar-2008-01.jpg',
@@ -1118,8 +1099,6 @@ export default () => {
       'tasks':'10,13,15,16',
       'format':'Cirkelvepa<BR>Bredd: 12540mm<BR>Höjd: 1500mm<BR><BR>Diskfront<BR>Bredd: 2020mm<BR>Höjd: 920mm',
       'year':'2016',
-      'link':'',
-      'linkName':'',
       'imgThumb': {
         'img1': '3d/Stockholmsmassan/BakChoklad/BoC-01.jpg',
         'img2': '3d/Stockholmsmassan/BakChoklad/BoC-02.jpg',
@@ -1180,8 +1159,13 @@ export default () => {
       'tasks':'28,26,25',
       'format':'Diplom: A3-storlek<BR>Logotyper i varierande storlek. ',
       'year':'2017',
-      'link':'http//:www.stockholmfurniturelightfair.sevara-utstallningar-pa-stockholm-furniture---light-faireditors-choice-starteditors-choice-2017',
-      'linkName':'Editors\' Choice Award 2017',
+      'link': [
+        {
+          'title': 'Besök sidan Editors\' Choice Award 2017',
+          'icon': 'web',
+          'url': 'http//:www.stockholmfurniturelightfair.sevara-utstallningar-pa-stockholm-furniture---light-faireditors-choice-starteditors-choice-2017'
+        }
+      ],
       'imgThumb': {
         'img1': 'other/ECA/ECA-02.jpg',
         'img2': 'other/ECA/ECA-04.jpg',
@@ -1217,7 +1201,7 @@ export default () => {
         {
           'url': 'https://play.google.com/store/apps/details?id=com.rateaucroupier.rateaucroupier',
           'icon': 'google',
-          'title': 'Google Play'
+          'title': 'Ladda hem appen på Google Play'
         }
       ],
       'imgThumb': {
@@ -1252,12 +1236,12 @@ export default () => {
         {
           'url': 'https://play.google.com/store/apps/details?id=com.challengize&gl=SE',
           'icon': 'google',
-          'title': 'Google Play'
+          'title': 'Ladda hem appen på Google Play'
         },
         {
           'url': 'https://apps.apple.com/se/app/challengize/id1376288953',
           'icon': 'apple',
-          'title': 'App Store'
+          'title': 'Ladda hem appen på App Store'
         }
       ],
       'imgThumb': {
@@ -1290,7 +1274,7 @@ export default () => {
         {
           'url': 'https://apps.apple.com/se/app/strike-trading-cards/id1438521483',
           'icon': 'apple',
-          'title': 'App Store'
+          'title': 'Ladda hem appen på App Store'
         }
       ],
       'imgThumb': {
@@ -1323,7 +1307,7 @@ export default () => {
         {
           'url': 'https://play.google.com/store/apps/details?id=com.redlineoil&gl=SE',
           'icon': 'google',
-          'title': 'Google Play'
+          'title': 'Ladda hem appen på Google Play'
         }
       ],
       'imgThumb': {
@@ -1358,7 +1342,7 @@ export default () => {
         {
           'url': 'https://xd.adobe.com/view/3e7e2117-037c-4990-9099-f0f5e14f6ab7/?hints=off',
           'icon': 'xd',
-          'title': 'XD Mockup'
+          'title': 'Se skissen på XD Mockup'
         }
       ],
       'imgThumb': {

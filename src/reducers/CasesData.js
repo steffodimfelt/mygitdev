@@ -1040,7 +1040,7 @@ export default () => {
         {
           'title': 'Besök sidan pontusolgrim.se',
           'icon': 'web',
-          'url': 'http//:pontusolgrim.se'
+          'url': 'http://www.pontusolgrim.se'
         }
       ],
       'imgThumb': {
